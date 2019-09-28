@@ -1,5 +1,5 @@
 ---
-title: Source Plugins
+title: Source plugins
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
