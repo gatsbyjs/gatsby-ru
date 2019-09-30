@@ -1,194 +1,206 @@
 ---
-title: Set Up Your Development Environment
+title: Подготовка среды разработки
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Before you start building your first Gatsby site, you’ll need to familiarize yourself with some core web technologies and make sure that you have installed all required software tools.
+Прежде чем приступить к созданию вашего первого сайта Gatsby, нам необходимо ознакомиться с некоторыми основными веб-технологиями и убедиться, что установлены все необходимые программные средства.
 
-## Familiarize yourself with the command line
+## Знакомство с командной строкой
 
-The command line is a text-based interface used to run commands on your computer. You’ll also often see it referred to as the terminal. In this tutorial, we’ll use both interchangeably. It’s a lot like using the Finder on a Mac or Explorer on Windows. Finder and Explorer are examples of graphical user interfaces (GUI). The command line is a powerful, text-based way to interact with your computer.
+Командная строка ― это текстовый интерфейс, используемый для запуска команд на компьютере, еще его часто называют "терминал". В этом руководстве будут равнозначно использоваться оба термина. Работа с терминалом очень похожа на использование Finder на Mac или Проводника на Windows. Finder и Проводник являются примерами графических пользовательских интерфейсов (GUI). Командная строка ― это мощная среда текстового взаимодействия с компьютером.
 
-Take a moment to locate and open up the command line interface (CLI) for your computer. Depending on which operating system you are using, see [**instructions for Mac**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/), [**instructions for Windows**](https://www.quora.com/How-do-I-open-terminal-in-windows) or [**instructions for Linux**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
+Мы рекомендуем выделить минуту, чтобы найти и открыть интерфейс командной строки (CLI) на вашем компьютере. В зависимости от используемой операционной системы используйте [**инструкции для Mac**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/ ), [**Windows**](https://www.quora.com/How-do-I-open-terminal-in-windows) или [**Linux**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/)
 
-## Install Homebrew for Node.js
+## Установка Homebrew для Node.js
 
-To install Gatsby and Node.js, it is recommended to use [Homebrew](https://brew.sh/). A little set-up in the beginning can save you from some headaches later on!
+Для установки Gatsby и Node.js рекомендуется использовать [Homebrew](https://brew.sh/). Небольшая установка в начале спасет вас от головной боли в дальнейшем!
 
-How to install or verify Homebrew on your computer:
+Как установить или проверить Homebrew на вашем компьютере:
 
-1. Open your Terminal.
-1. See if Homebrew is installed by running `brew -v`. You should see "Homebrew" and a version number.
-1. If not, download and install [Homebrew with the instructions](https://docs.brew.sh/Installation) for your operating system (Mac, Linux or Windows).
-1. Once you've installed Homebrew, repeat step 2 to verify.
+1. Откройте терминал
+1. Проверьте установлен ли Homebrew командой `brew -v`. Вы должны увидеть "Homebrew" и номер версии.
+1. Если нет, скачайте и установите [Homebrew по инструкции](https://docs.brew.sh/Installation) для вашей операционной системы (Mac, Linux или Windows).
+1. Чтобы убедится в успешной установке Homebrew, вернитесь на шаг 2.
 
-### Mac Users: install Xcode Command Line Tools
+### Пользователи Mac: установка инструментов командной строки Xcode
 
-1. Open your Terminal.
-1. On a Mac, install Xcode Command line tools by running `xcode-select --install`.
-   1. If that fails, download it [directly from the Apple site](https://developer.apple.com/download/more/), after signing-in with Apple developer account
-1. After being prompted to start the installation, you'll be prompted again to accept a software license for the tools to download.
+1. Откройте терминал
+1. Чтобы установить на Mac инструменты командной строки Xcode, используйте команду `xcode-select --install`
+	1. Если это не сработало, то загрузите его [прямо с сайта Apple](https://developer.apple.com/download/more/) после входа в учетную запись разработчика Apple
+1. После уведомления о начале установки будет предложено принять лицензию на программное обеспечение для загружаемых инструментов
 
-## ⌚ Install Node.js and npm
+## ⌚ Установка Node.js и npm
 
-Node.js is an environment that can run JavaScript code outside of a web browser. Gatsby is built with Node.js. To get up and running with Gatsby, you’ll need to have a recent version installed on your computer.
+Node.js ― это среда, которая может запускать код JavaScript вне веб-браузера. Gatsby построен и запускается с помощью Node.js, поэтому чтобы начать работу, на компьютере должна быть установлена последняя версия.
 
-_Note: Gatsby's minimum supported Node.js version is Node 8, but feel free to use a more recent version._
+_Заметка: минимальная версия Node.js для работы с Gatsby ― Node 8, но конечно же лучше использовать одну из последних._
 
-1. Open your Terminal.
-1. Run `brew update` to make sure you have the latest version of Homebrew.
-1. Run this command to install Node and npm in one go: `brew install node`
+1. Откройте терминал
+1. Запустите `brew update` чтобы получить последнюю версию Homebrew.
+1. Запустите `brew install node` чтобы установить Node и npm
 
-Once you have followed the installation steps, make sure everything was installed properly:
+После завершения установки, убедись, что все работает исправно:
 
-### Check your Node.js installation
+### Проверка Node.js
 
-1.  Open up your terminal.
-2.  Run `node --version`. (If you’re new to the command line, “run `command`” means “type `node --version` in the command prompt, and hit the Enter key”. From here on, this is what we mean by “run `command`”).
-3.  Run `npm --version`.
+1. Откройте терминал
+2. Запустите `node --version`. (Если вы новичок в работе с командной строкой, "запустить `команду`" означает набрать `command` в терминале и нажать клавишу Enter.)
+3. Запустите `npm --version`.
 
-The output of each of those commands should be a version number. Your versions may not be the same as those shown below! If entering those commands doesn’t show you a version number, go back and make sure you have installed Node.js.
+Каждая из этих команд должна вывести номер версии. Ваши версии могут отличаться от представленных ниже! Если при запуске этих команд не отображается номер версии, значит при установке что-то пошло не так.
 
-![Check node and npm versions in terminal](01-node-npm-versions.png)
+![Проверка версий node и npm в терминале](01-node-npm-versions.png)
 
-## Install Git
 
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. When you install a Gatsby "starter" site, Gatsby uses Git behind the scenes to download and install the required files for your starter. You will need to have Git installed to set up your first Gatsby site.
 
-The steps to download and install Git depend on your operating system. Follow the guide for your system:
 
-- [Install Git on macOS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
-- [Install Git on Windows](https://www.atlassian.com/git/tutorials/install-git#windows)
-- [Install Git on Linux](https://www.atlassian.com/git/tutorials/install-git#linux)
+// завершено здесь
 
-## Using the Gatsby CLI
 
-The Gatsby CLI tool lets you quickly create new Gatsby-powered sites and run commands for developing Gatsby sites. It is a published npm package.
 
-The Gatsby CLI is available via npm and should be installed globally by running `npm install -g gatsby-cli`.
 
-To see the commands available, run `gatsby --help`.
+## Установка Git
 
-![Check gatsby commands in terminal](05-gatsby-help.png)
+Git — это бесплатная распределенная система контроля версий с открытым исходным кодом, предназначенная для быстрой и эффективной работы с небольшими и очень крупными проектами. При установке «стартового» проекта, Gatsby использует Git «за кулисами» для загрузки и установки необходимых файлов. Тебе нужно будет установить Git, чтобы настроить свой первый сайт Gatsby.
 
-> 💡 If you are unable to successfully run the Gatsby CLI due to a permissions issue, you may want to check out the [npm docs on fixing permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions), or [this guide](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md).
+Действия по загрузке и установке Git зависят от твоей операционной системы:
 
-## Create a Gatsby site
+- [Установка Git на macOS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
+- [Установка Git на Windows](https://www.atlassian.com/git/tutorials/install-git#windows)
+- [Установка Git на Linux](https://www.atlassian.com/git/tutorials/install-git#linux)
 
-Now you are ready to use the Gatsby CLI tool to create your first Gatsby site. Using the tool, you can download “starters” (partially built sites with some default configuration) to help you get moving faster on creating a certain type of site. The “Hello World” starter you’ll be using here is a starter with the bare essentials needed for a Gatsby site.
+## Работа с Gatsby CLI
 
-1.  Open up your terminal.
-2.  Run `gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world`. (_Note: Depending on your download speed, the amount of time this takes will vary. For brevity's sake, the gif below was paused during part of the install_).
-3.  Run `cd hello-world`.
-4.  Run `gatsby develop`.
+Инструмент Gatsby CLI позволяет быстро создавать и редактировать новые сайты на основе Gatsby. Это публичный [npm-пакет](https://www.npmjs.com/package/gatsby-cli).
+
+Gatsby CLI доступен через npm и должен быть установлен глобально с помощью команды `npm install -g gatsby-cli`
+
+Для проверки успешной установки и, чтобы увидеть все доступные команды, запусти `gatsby --help`
+
+
+![05-gatsby-help](//images.ctfassets.net/iw32kzj3phth/58EYCoEklthTdxAs9ecBrf/4b34310d310fea9f1d93c08e08cfd836/05-gatsby-help.png)
+
+> Если ты не можешь успешно запустить интерфейс командной строки Gatsby из-за проблем с доступами, посмотри об исправлении этой проблемы для npm [здесь](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally) или [здесь](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md).
+
+## Создание сайта Gatsby
+
+Теперь мы готовы использовать Gatsby CLI для создания своего первого сайта Gatsby. Используя этот инструмент, можно загружать "стартовые версии" (частично созданные проекты с некоторой конфигурацией), чтобы ускорить создание сайта определенного типа. Стартер "Hello World", который мы будем рассматривать здесь — это шаблонный проект с самыми необходимыми элементами для сайта Gatsby.
+
+1. Откройте терминал.
+2. Запусти `gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world`.
+> В зависимости от скорости загрузки, время создания проекта будет различным. Для экономии времени, пример ниже был приостановлен во время установки.
+3. Запусти `cd hello-world`.
+4. Запусти `gatsby develop`.
 
 <video controls="controls" autoplay="true" loop="true">
-  <source type="video/mp4" src="./03-create-site.mp4"></source>
-  <p>Sorry! You browser doesn't support this video.</p>
+  <source type="video/mp4" src="//videos.ctfassets.net/iw32kzj3phth/3DqEZrup6dOe3cl3Cb1pZz/45e762cc347e1a07f2f36b5b255f2fbd/03-create-site-0715fd9dc87c60bf31a754aefab80b1f.mp4"></source>
+  <p>Извините, этот браузер не поддерживает данное видео.</p>
 </video>
 
-What just happened?
+Что сейчас произошло?
+
 
 ```shell
 gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
 
-- `new` is a gatsby command to create a new Gatsby project.
-- Here, `hello-world` is an arbitrary title — you could pick anything. The CLI tool will place the code for your new site in a new folder called “hello-world”.
-- Lastly, the GitHub URL specified points to a code repository that holds the starter code you want to use.
+- `new` ― команда gatsby для создания нового проекта
+- "hello-world" ― это произвольное название, ты можешь выбрать что угодно. Инструмент CLI поместит код для нового сайта в папку с указанным названием "hello-world".
+- указанный URL-адрес указывает на GitHub-репозиторий, в котором содержится код для стартового проекта.
 
 ```shell
 cd hello-world
 ```
 
-- This says 'I want to change directories (`cd`) to the “hello-world” subfolder'. Whenever you want to run any commands for your site, you need to be in the context for that site (aka, your terminal needs to be pointed at the directory where your site code lives).
+- `cd` _(change directory)_ ― сменит текущее расположение на подпапку "hello-world". Всякий раз, когда требуется выполнить какие-либо команды для сайта, нужно быть в контексте этого сайта (в ином случае, терминал должен указывать на каталог, где живет код вашего сайта)
 
 ```shell
 gatsby develop
 ```
 
-- This command starts a development server. You will be able to see and interact with your new site in a development environment — local (on your computer, not published to the internet).
+- команда запускает сервер с сайтом в режиме разработки, предоставляя возможность видеть и взаимодействовать с сайтом в браузере без публикации его в Интернет.
 
-### View your site locally
+### Локальный просмотр сайта
 
-Open up a new tab in your browser and navigate to [**http://localhost:8000**](http://localhost:8000/).
 
-![Check homepage](04-home-page.png)
+Открывай новую вкладку в браузере и переходи по ссылке [**http://localhost:8000**](http://localhost:8000/).
 
-Congrats! This is the beginning of your very first Gatsby site! 🎉
+![04-home-page](//images.ctfassets.net/iw32kzj3phth/1hneTzovLxdci0LTn4TtNr/21afbcce8589d3e9f287847371e69cab/04-home-page.png)
 
-You’ll be able to visit the site locally at [**_http://localhost:8000_**](http://localhost:8000/) for as long as your development server is running. That’s the process you started by running the `gatsby develop` command. To stop running that process (or to “stop running the development server”), go back to your terminal window, hold down the “control” key, and then hit “c” (ctrl-c). To start it again, run `gatsby develop` again!
+Наши поздравления! Это твой первый сайт на Gatsby! 🎉
 
-**Note:** If you are using VM setup like `vagrant` and/or would like to listen on your local IP address, run `gatsby develop -- --host=0.0.0.0`. Now, the development server listens on both 'localhost' and your local IP.
+Сайт будет доступен локально по адресу [**_http: // localhost: 8000_**](http: // localhost: 8000 /), пока работает сервер разработки. Это процесс, который ты запустил с помощью команды `gatsby develop`. Чтобы остановить работу сайта (или "убить сервер разработки"), нужно вернуться в окно терминала и нажать комбинацию клавиш **Ctrl + C**. Для повторного запуска используй ту же команду ― `gatsby develop`!
 
-## Set up a code editor
+> Если ты пользуешься виртуальной машиной, например, `vagrant` и/или хочешь прослушивать локальный IP-адрес, нужно запускать сервер с дополнительными флагами `gatsby develop --host=0.0.0.0`, чтобы сервер разработки находился на localhost и на локальном IP-адресе.
 
-A code editor is a program designed specifically for editing computer code. There are many great ones out there.
+## Установка текстового редактора
 
-> If you haven't worked with a code editor before, we recommend [**VS Code**](https://code.visualstudio.com/), simply because the screenshots used throughout the tutorial were taken in VS Code, and therefore may look more similar to your screen.
+Текстовый редактор ― это программа, разработанная специально для редактирования компьютерного кода. Есть много великих там.
 
-### Download VS Code
+> Если тебе еще не приходилось работать с редакторами, то мы рекомендуем [**VS Code**](https://code.visualstudio.com/) просто потому, что скриншоты из этого руководства, были сделаны в нём.
 
-Gatsby documentation sometimes includes screenshots of code editors; these screenshots show the VS Code editor, so if you don't have a preferred code editor yet, using VS Code will make sure that your screen looks just like the screenshots in the tutorial and docs. If you choose to use VS Code, visit the [VS Code site](https://code.visualstudio.com/#alt-downloads) and download the version appropriate for your platform.
+### Загрузка VS Code
 
-### Install the Prettier plugin
+Для начала работы с VS Code, переходи на [сайт VS Code](https://code.visualstudio.com/#alt-downloads) и загружай версию для твоей ОС.
 
-We also recommend using [Prettier](https://github.com/prettier/prettier), a tool that helps format your code to avoid errors.
+### Плагин Prettier
 
-You can use Prettier directly in your editor using the [Prettier VS Code plugin](https://github.com/prettier/prettier-vscode):
+Мы также рекомендуем использовать [Prettier](https://github.com/prettier/prettier) ― инструмент, который помогает форматировать код. Чтобы использовать его в редакторе, достаточно установить [плагин Prettier VS Code](https://github.com/prettier/prettier-vscode):
 
-1.  Open the extensions view on VS Code (View => Extensions).
-2.  Search for "Prettier - Code formatter".
-3.  Click "Install". (After installation you'll be prompted to restart VS Code to enable the extension. Newer versions of VS Code will automatically enable the extension after download.)
+1. Откройте "Расширения" в VS Code (View => Extensions).
+2. Используя поиск, найди "Prettier - Code formatter".
+3. Нажми "Установить"
+4. После установки нужно перезапустить VS Code, чтобы включить расширение.
 
-> 💡 If you're not using VS Code, check out the Prettier docs for [install instructions](https://prettier.io/docs/en/install.html) or [other editor integrations](https://prettier.io/docs/en/editors.html).
+> 💡 Для других текстовых редакторов используй инструкции [здесь](https://prettier.io/docs/en/install.html) и [здесь](https://prettier.io/docs/en/editors.html).
 
-## ➡️ What’s Next?
+## ➡️ Что дальше?
 
-To summarize, in this section you:
+Суммируя всё вышесказанное, в этом разделе мы:
 
-- Learned about the command line and how to use it
-- Installed and learned about Node.js and the npm CLI tool, the version control system Git, and the Gatsby CLI tool
-- Generated a new Gatsby site using the Gatsby CLI tool
-- Ran the Gatsby development server and visited your site locally
-- Downloaded a code editor
-- Installed a code formatter called Prettier
+- узнали о командной строке и как ее использовать
+- установили **Node.js**, **npm**, **Git** и **Gatsby CLI**
+- создали новый сайт с использованием инструмента **Gatsby CLI**
+- запустили сервер для разработки Gatsby и открыли локальный сайт
+- скачали и установили текстовый редактор
+- добавили форматировщик кода под названием Prettier
 
-Now, move on to [**getting to know Gatsby building blocks**](/tutorial/part-one/).
+Следующий шаг [**Строительные блоки Gatsby**](/ru/part-one/).
 
-## References
+## Рекомендации
 
-## Overview of core technologies
+### Обзор основных технологий
 
-It’s not necessary to be an expert with these already — if you’re not, don’t worry! You’ll pick up a lot through the course of this tutorial series. These are some of the main web technologies you’ll use when building a Gatsby site:
+Как ты мог заметить, не обязательно быть экспертом в веб-разработке, чтобы начать работу с Gatsby! Многое узнается в ходе этой серии уроков. Вот некоторые из основных технологий, которые нам пригодятся в дальнейшем изучении:
 
-- **HTML**: A markup language that every web browser is able to understand. It stands for HyperText Markup Language. HTML gives your web content a universal informational structure, defining things like headings, paragraphs, and more.
-- **CSS**: A presentational language used to style the appearance of your web content (fonts, colors, layout, etc). It stands for Cascading Style Sheets.
-- **JavaScript**: A programming language that helps us make the web dynamic and interactive.
-- **React**: A code library (built with JavaScript) for building user interfaces. It’s the framework that Gatsby uses to build pages and structure content.
-- **GraphQL**: A query language that allows you to pull data into your website. It’s the interface that Gatsby uses for managing site data.
+- **HTML**: язык разметки гипертекста, понятный каждому веб-браузеру. HTML дает веб-контенту универсальную информационную структуру, определяющую такие вещи, как заголовки, абзацы и многое другое.
+- **CSS**: язык представления, используемый для оформления внешнего вида веб-контента (шрифты, цвета, макет и т.д.).
+- **JavaScript**: язык программирования, который помогает нам сделать Интернет динамичным и интерактивным.
+- **React**: библиотека (построенная на JavaScript) для создания пользовательских интерфейсов. Это среда, которую Gatsby использует для создания страниц и структурирования контента.
+- **GraphQL**: язык запросов позволяющий получать данные из различных источников и который Gatsby использует для управления данными сайта.
 
-## What is a website?
+### Что такое сайт?
 
-For a comprehensive introduction to what a website is--including an intro to HTML and CSS--check out “[**Building your first web page**](https://learn.shayhowe.com/html-css/building-your-first-web-page/)”. It’s a great place to start learning about the web. For a more hands-on introduction to [**HTML**](https://www.codecademy.com/learn/learn-html), [**CSS**](https://www.codecademy.com/learn/learn-css), and [**JavaScript**](https://www.codecademy.com/learn/introduction-to-javascript), check out the tutorials from Codecademy. [**React**](https://reactjs.org/tutorial/tutorial.html) and [**GraphQL**](http://graphql.org/graphql-js/) also have their own introductory tutorials.
+Чтобы получить полное представление о том, что такое веб-сайт, включая введение в HTML и CSS, предлагаем ознакомится со статьей "[**Создание первой веб-страницы**](https://learn.shayhowe.com/html-css/building-your-first-web-page/)". Это отличная отправная точка, чтобы начать изучать веб. Для более практичного ознакомления с [**HTML**](https://www.codecademy.com/learn/learn-html), [**CSS**](https://www.codecademy.com / learn / learn-css) и [**JavaScript**](https://www.codecademy.com/learn/introduction-to-javascript), ознакомьтесь с руководствами Codecademy. [**React**](https://reactjs.org/tutorial/tutorial.html) и [**GraphQL**](http://graphql.org/graphql-js/) имеют свои официальные руководства.
 
-## Learn more about the command line
+### Больше о командной строке
 
-For a great introduction to using the command line, check out [**Codecademy’s Command Line tutorial**](https://www.codecademy.com/courses/learn-the-command-line/lessons/navigation/exercises/your-first-command) for Mac and Linux users, and [**this tutorial**](https://www.computerhope.com/issues/chusedos.htm) for Windows users. Even if you are a Windows user, the first page of the Codecademy tutorial is a valuable read. It explains what the command line is, not just how to interface with it.
+Отличным стартом в работе с командной строкой будет [**курс по командной строке Codecademy**](https://www.codecademy.com/courses/learn-the-command-line/lessons/navigation/exercises/your -first-command) для пользователей Mac и Linux и [**это руководство**](https://www.computerhope.com/issues/chusedos.htm) для пользователей Windows. Даже если вы пользователь Windows, первая страница учебника Codecademy будет полезна для чтения, так как там представлена общая теоретическая база.
 
-## Learn more about npm
+### Больше о npm
 
-npm is a JavaScript package manager. A package is a module of code that you can choose to include in your projects. If you just downloaded and installed Node.js, npm was installed with it!
+**npm** ― менеджер пакетов **JavaScript**. Пакет ― это модуль кода, который можно включить в свои проекты. Если ты только что скачал и установил **Node.js**, это значит, что **npm** был установлен вместе с ним!
 
-npm has three distinct components: the npm website, the npm registry, and the npm command line interface (CLI).
+**npm** представлен в трех видах: _веб-сайт npm_, _реестр npm_ и интерфейс командной строки _npm CLI_.
 
-- On the npm website, you can browse what JavaScript packages are available in the npm registry.
-- The npm registry is a large database of information about JavaScript packages available on npm.
-- Once you’ve identified a package you want, you can use the npm CLI to install it in your project or globally (like other CLI tools). The npm CLI is what talks to the registry — you generally only interact with the npm website or the npm CLI.
+- На сайте npm можно просмотреть, какие пакеты JavaScript доступны в реестре npm.
+- Реестр npm ― это большая база данных пакетов JavaScript, доступных на npm.
+- После того, как пакет выбран, его можно установить с помощью интерфейса командной строки npm.
+- CLI npm ― это то, что работает с реестром
 
-> 💡 Check out npm’s introduction, “[**What is npm?**](https://docs.npmjs.com/getting-started/what-is-npm)”.
+> 💡 Введение в npm "[**Что такое npm?**](https://docs.npmjs.com/getting-started/what-is-npm)".
 
-## Learn more about Git
+### Больше о Git
 
-You will not need to know Git to complete this tutorial, but it is a very useful tool. If you are interested in learning more about version control, Git, and GitHub, check out GitHub's [Git Handbook](https://guides.github.com/introduction/git-handbook/).
+Не нужно знать Git, чтобы пройти этот урок, но это очень полезный инструмент. Если ты хочешь узнать больше о контроле версий, Git и GitHub, то вот хороший ресурс ― [Git Handbook](https://guides.github.com/introduction/git-handbook/).
