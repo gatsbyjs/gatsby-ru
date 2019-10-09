@@ -41,3 +41,5 @@
 <!-- переводить как -->
 > Заметка: Эта часть руководства была сосредоточена на самом быстром и простом способе получить...
 ```
+7. Заголовки должны быть оформлены согласно [документации](https://www.gatsbyjs.org/contributing/gatsby-style-guide/#format-titles-and-headers)
+8. Следует избегать обращений "мы" и "наш", и использовать ["вы" и "ваш"](https://www.gatsbyjs.org/contributing/gatsby-style-guide/#use-you-as-the-pronoun)
