@@ -29,3 +29,17 @@
 5. Используйте только следующие символы:
    - `―`(mdash) в случаях с тире
    - `"`(doublequote) вместо любых других типов кавычек в тексте
+6. Советы/подсказки, которые оформлены в виде цитат, переводить как `Заметка`. Например:
+
+   ```markdown
+   > Note: Feel free to create these directories and files using your code editor, if you'd prefer.
+   <!-- переводить как -->
+   > Заметка: При желании вы можете создавать эти каталоги и файлы самостоятельно или с помощью редактора.
+
+    > Tip: This part of the tutorial has focused on the quickest and most straightforward way to get...
+    <!-- переводить как -->
+    > Заметка: Эта часть руководства была сосредоточена на самом быстром и простом способе получить...
+    ```
+
+7. Заголовки должны быть оформлены согласно [документации](https://www.gatsbyjs.org/contributing/gatsby-style-guide/#format-titles-and-headers)
+8. Следует избегать обращений "мы" и "наш", и использовать ["вы" и "ваш"](https://www.gatsbyjs.org/contributing/gatsby-style-guide/#use-you-as-the-pronoun)
