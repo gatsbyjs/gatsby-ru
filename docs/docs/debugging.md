@@ -1,8 +1,8 @@
 ---
-title: Debugging
-overview: true
+title: отладка
+обзор: правда
 ---
 
-While building your site, you’ll sometimes encounter bugs. These guides help you set up debugging in Gatsby so you can spot and squash bugs more easily.
+Пока строительство твой сайт, Вы будете иногда столкновение ошибки. Эти направляющие Помогите вы установлен вверх отладка в Gatsby так вы Можно пятно а также сквош ошибки Больше без труда.
 
 <GuideList slug={props.slug} />
