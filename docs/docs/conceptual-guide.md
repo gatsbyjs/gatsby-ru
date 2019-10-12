@@ -1,8 +1,8 @@
 ---
-title: Conceptual Guide
-overview: true
+title: концептуальный руководство
+обзор: правда
 ---
 
-Read high-level overviews of the Gatsby approach.
+Читать высокий уровень отзывы из Gatsby подход.
 
 <GuideList slug={props.slug} />
