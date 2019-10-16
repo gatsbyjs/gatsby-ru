@@ -1,15 +1,15 @@
 ---
-title: How to Contribute
+title: Как внести свой вклад
 ---
 
-We want contributing to Gatsby to be fun, enjoyable, and educational for anyone and everyone. All contributions are welcome, including issues, new docs as well as updates and tweaks, blog posts, workshops, and more.
+Мы хотим, чтобы внесение вклада в Gatsby было веселым, приятным и образовательным для всех и каждого. Приветствуется любой вклад, включая ишью, новую документацию, а также обновления и правки, сообщения в блогах, семинары и многое другое.
 
-## Not sure how to start contributing?
+## Не знаете как начать вносить вклад?
 
-If you are worried or don't know where to start, check out our [where to participate](/contributing/where-to-participate/) page. You can reach out with questions to [Marcy Sutton (@marcysutton)](https://twitter.com/marcysutton) or [@GatsbyJS](https://twitter.com/gatsbyjs) on Twitter, and anyone from the Gatsby team on [Discord](https://gatsby.dev/discord). You can also [submit an issue](/contributing/how-to-file-an-issue/) and a maintainer can give you guidance!
+Если вы беспокоитесь или не знаете с чего начать, посетите нашу страницу [Где участвовать в жизни сообщества](/contributing/where-to-participate/). Вы можете обратиться с вопросами к [Marcy Sutton (@marcysutton)](https://twitter.com/marcysutton) или [@GatsbyJS](https://twitter.com/gatsbyjs) в Твиттере, а также к любому из команды Gatsby в [Discord](https://gatsby.dev/discord). Вы также можете [создать ишью](/contributing/how-to-file-an-issue/) и получить ценные советы от других участников.
 
-## Pair programming
+## Парное программирование
 
-Gatsby.js offers free [pair programming sessions](/contributing/pair-programming/) to the community, if there's something you'd like to work on together. Get in touch with us if you have a question about contributing or an idea for something to pair on!
+Gatsby.js предлагает для сообщества бесплатные [сеансы парного программирования](/contributing/pair-programming/), если есть что-то, над чем вы хотели бы поработать вместе. Свяжитесь с нами, если у вас есть вопросы о внесении вклада, или идеи для чего-то, что можно сделать в паре.
 
 <GuideList slug={props.slug} />
