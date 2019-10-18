@@ -2,17 +2,17 @@
 title: Добавление файла manifest
 ---
 
-Если Вы запускали [аудит с Lighthouse](/docs/audit-with-lighthouse/), Вы наверняка заметили невысокий рейтинг в категории "Progressive Web App". Давайте разберёмся, как можно увеличить этот рейтинг.
+Если Вы проводили [аудит с помощью Lighthouse](/docs/audit-with-lighthouse/), вы наверняка заметили невысокий рейтинг в категории "Progressive Web App". Давайте разберёмся, как можно увеличить этот рейтинг.
 
 Но для начала разберёмся: чем _на самом деле_ является PWA?
 
-PWA - обычные веб-сайты, которые используют возможности современных браузеров, чтобы расширить обычное поведение сайта функциями и выгодами, как в приложениях. Изучите [обзор от Google](https://developers.google.com/web/progressive-web-apps/), чтобы понять, какие выгоды даёт PWA и [документацию про Прогрессивные веб Приложения (PWAs)](/docs/progressive-web-app/), чтобы разобраться, как Gatsby реализует эти возможности.
+PWA - обычные веб-сайты, которые используют возможности современных браузеров, чтобы расширить обычное поведение сайта специальными возможностями, как в приложениях. Изучите [обзор от Google](https://developers.google.com/web/progressive-web-apps/), чтобы понять, какие выгоды даёт PWA и [документацию про Прогрессивные веб Приложения (PWAs)](/docs/progressive-web-app/), чтобы разобраться, как Gatsby реализует эти возможности.
 
 Подключение файла веб-приложения manifest - это один из трех общепринятых [основных требований PWA](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa#section1).
 
 Цитируя [Google](https://developers.google.com/web/fundamentals/web-app-manifest/):
 
-> Манифест веб-приложения -  это простой JSON файл, который рассказывает браузеру о Вашем веб-приложении и о том, как оно будет себя вести, когда оно "установится" на телефон или компьютер пользователя.
+> Манифест веб-приложения -  это простой JSON файл, который рассказывает браузеру о вашем веб-приложении и о том, как оно будет себя вести, когда оно "установится" на телефон или компьютер пользователя.
 
 [Gatsby's manifest plugin](/packages/gatsby-plugin-manifest/) позволяет Gatsby создать `manifest.webmanifest` файл при каждой сборке сайта.
 
@@ -24,9 +24,9 @@ PWA - обычные веб-сайты, которые используют во
 npm install --save gatsby-plugin-manifest
 ```
 
-2. Добавьте фавиконку Вашего приложения в папку `src/images/icon.png`. Иконка требуется для сборки всех иконок в манифесте. Для более детальной информации ознакомьтесь с репозиторием [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md).
+2. Добавьте фавиконку вашего приложения в папку `src/images/icon.png`. Иконка требуется для сборки всех иконок в манифесте. Для более детальной информации ознакомьтесь с репозиторием [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md).
 
-3. Добавьте `plugins` массив в Ваш файл `gatsby-config.js`.
+3. Добавьте массив `plugins` в файл `gatsby-config.js`.
 
 ```javascript:title=gatsby-config.js
 {
@@ -53,4 +53,4 @@ npm install --save gatsby-plugin-manifest
 }
 ```
 
-Это всё, что вВам нужно для добавления манифеста в сайт Gatsby. Этот пример иллюстрирует базовую настройку плагина -- изучите [его описание](/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest#automatic-mode), чтобы узнать о других опциях.
+Это всё, что нужно для добавления манифеста в Gatsby-сайт. Этот пример иллюстрирует базовую настройку плагина -- изучите [его описание](/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest#automatic-mode), чтобы узнать о расширенных настройках.
