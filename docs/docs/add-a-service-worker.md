@@ -1,18 +1,18 @@
 ---
-title: Добавление Service Worker
+title: Добавление сервис-воркера
 ---
 
-### Что такое service worker
+### Что такое сервис-воркер
 
-Service worker - это скрипт, который Ваш браузер выполняет в фоне, отдельно от основного кода вкладки, что открывает возможности для скриптов, которым не нужна веб-страница или взаимодейтсвие с пользователем. Они улучшают стабильность Вашего приложения в условиях плохого подключения и существенно помогают улучшить пользовательский опыт.
+Сервис-воркер - это скрипт, который браузер выполняет в фоновом режиме, отдельно от основного кода вкладки, открывая возможности для скриптов, которым не нужна веб-страница или взаимодействие с пользователем. Они повышают доступность вашего приложения в условиях нестабильного подключения и существенно помогают улучшить удобство работы с сайтом.
 
-Он поддерживает возможности отправки уведомлений и синхронизации в фоне.
+Он поддерживает возможности отправки уведомлений и фоновой синхронизации.
 
-### Использование service worker в Gatsby с `gatsby-plugin-offline`
+### Использование сервис-воркера в Gatsby с помощью `gatsby-plugin-offline`
 
-Gatsby предоставляет прекрасный плагин для создания и добавления service worker на ваш сайт: [gatsby-plugin-offline](https://www.npmjs.com/package/gatsby-plugin-offline).
+У Gatsby есть прекрасный плагин для создания и загрузки сервис-воркера на ваш сайт: [gatsby-plugin-offline](https://www.npmjs.com/package/gatsby-plugin-offline).
 
-Мы рекомендуем использовать этот плагин вместе с [manifest плагином](https://www.npmjs.com/package/gatsby-plugin-manifest). (Не забудь указать offline плагин строго после manifest плагина, чтобы service worker можно было включить в манифест приложения).
+Мы рекомендуем использовать этот плагин вместе с [плагином манифеста](https://www.npmjs.com/package/gatsby-plugin-manifest). (Не забудьте указать плагин сервис-воркера (offline) после плагина манифеста, чтобы в файл манифеста можно было указать сервис-воркер).
 
 ### Установка `gatsby-plugin-offline`
 
@@ -26,5 +26,5 @@ plugins: [`gatsby-plugin-offline`]
 
 ## References
 
-- [Service Workers: Введение](https://developers.google.com/web/fundamentals/primers/service-workers/)
-- [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
+- [Сервис-воркеры: введение](https://developers.google.com/web/fundamentals/primers/service-workers/)
+- [Service Worker API](https://developer.mozilla.org/ru/docs/Web/API/Service_Worker_API)
