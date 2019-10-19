@@ -44,7 +44,7 @@ npm install --save gatsby-plugin-manifest
         display: "standalone",
         icon: "src/images/icon.png", // путь относительно корня сайта.
         // Дополнительные атрибут, добавляющий проверку CORS.
-        // Если вы не укажите опцию crossOrigin, настройки CORS не будут добавлены в манифесте.
+        // Если вы не укажите опцию crossOrigin, настройки CORS не будут добавлены в манифест.
         // Любая некорректная или пустая строка по умолчанию преобразуется в `anonymous`
         crossOrigin: `use-credentials`,
       },
