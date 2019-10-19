@@ -1,20 +1,20 @@
 ---
-title: Добавление файла manifest
+title: Добавление файла манифеста
 ---
 
-Если Вы проводили [аудит с помощью Lighthouse](/docs/audit-with-lighthouse/), вы наверняка заметили невысокий рейтинг в категории "Progressive Web App". Давайте разберёмся, как можно увеличить этот рейтинг.
+Если вы проводили [аудит с помощью Lighthouse](/docs/audit-with-lighthouse/), то наверняка заметили невысокие баллы в категории "Progressive Web App". Давайте разберёмся, как можно увеличить этот показатель.
 
-Но для начала разберёмся: чем _на самом деле_ является PWA?
+Но для начала выясним: что _на самом деле_ такое PWA?
 
-PWA - обычные веб-сайты, которые используют возможности современных браузеров, чтобы расширить обычное поведение сайта специальными возможностями, как в приложениях. Изучите [обзор от Google](https://developers.google.com/web/progressive-web-apps/), чтобы понять, какие выгоды даёт PWA и [документацию про Прогрессивные веб Приложения (PWAs)](/docs/progressive-web-app/), чтобы разобраться, как Gatsby реализует эти возможности.
+PWA - обычные сайты, использующие функциональность современных браузеров, чтобы расширить обычное поведение сайта специальными возможностями, как в приложениях. Посмотрите [обзор от Google](https://developers.google.com/web/progressive-web-apps/), чтобы понять, какие выгоды даёт PWA, и [документацию по прогрессивным веб-приложениям (PWA)](/docs/progressive-web-app/), чтобы узнать, почему сайт на Gatsby является таким приложением.
 
 Подключение файла веб-приложения manifest - это один из трех общепринятых [основных требований PWA](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa#section1).
 
 Цитируя [Google](https://developers.google.com/web/fundamentals/web-app-manifest/):
 
-> Манифест веб-приложения -  это простой JSON файл, который рассказывает браузеру о вашем веб-приложении и о том, как оно будет себя вести, когда оно "установится" на телефон или компьютер пользователя.
+> Манифест веб-приложения -  это простой JSON-файл, который сообщает браузеру о веб-приложении и о том, как оно будет работать, когда "установится" на телефон или компьютер.
 
-[Gatsby's manifest plugin](/packages/gatsby-plugin-manifest/) позволяет Gatsby создать `manifest.webmanifest` файл при каждой сборке сайта.
+[Плагин манифеста Gatsby](/packages/gatsby-plugin-manifest/) позволяет Gatsby создать `manifest.webmanifest` файл при каждой сборке сайта.
 
 ### Использование `gatsby-plugin-manifest`
 
@@ -24,9 +24,9 @@ PWA - обычные веб-сайты, которые используют во
 npm install --save gatsby-plugin-manifest
 ```
 
-2. Добавьте фавиконку вашего приложения в папку `src/images/icon.png`. Иконка требуется для сборки всех иконок в манифесте. Для более детальной информации ознакомьтесь с репозиторием [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md).
+2. Добавьте фавиконку приложения в папку `src/images/icon.png`. Эта иконка требуется для сборки всех изображений в манифесте. Для более детальной информации ознакомьтесь с документацией в репозитории [`gatsby-plugin-manifest`](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-manifest/README.md).
 
-3. Добавьте массив `plugins` в файл `gatsby-config.js`.
+3. Добавьте плагин в массив `plugins` в файле `gatsby-config.js`.
 
 ```javascript:title=gatsby-config.js
 {
@@ -39,12 +39,12 @@ npm install --save gatsby-plugin-manifest
         start_url: "/",
         background_color: "#6b37bf",
         theme_color: "#6b37bf",
-        // Включает запрос "Добавить на домашний экран" и выключает интерфейс браузера (и кнопку "назад")
+        // Включает отображение диалогового окна "Добавить на домашний экран" и выключает интерфейс браузера (и кнопку "назад")
         // см. https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
         icon: "src/images/icon.png", // путь относительно корня сайта.
         // Дополнительные атрибут, добавляющий проверку CORS.
-        // Если Вы не укажите опицию crossOrigin, настройки CORS не будут указаны в манифесте.
+        // Если вы не укажите опцию crossOrigin, настройки CORS не будут добавлены в манифесте.
         // Любая некорректная или пустая строка по умолчанию преобразуется в `anonymous`
         crossOrigin: `use-credentials`,
       },
