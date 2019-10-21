@@ -39,7 +39,7 @@ npm install --save gatsby-plugin-manifest
         start_url: "/",
         background_color: "#6b37bf",
         theme_color: "#6b37bf",
-        // Включает отображение диалогового окна "Добавить на домашний экран" и выключает интерфейс браузера (и кнопку "назад")
+        // Включает отображение диалогового окна "Добавить на домашний экран" и выключает интерфейс браузера (вместе с кнопкой "назад")
         // см. https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
         icon: "src/images/icon.png", // путь относительно корня сайта.
