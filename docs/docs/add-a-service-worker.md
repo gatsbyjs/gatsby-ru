@@ -12,7 +12,7 @@ title: Добавление сервис-воркера
 
 У Gatsby есть прекрасный плагин для создания и загрузки сервис-воркера на ваш сайт: [gatsby-plugin-offline](https://www.npmjs.com/package/gatsby-plugin-offline).
 
-Мы рекомендуем использовать этот плагин вместе с [плагином манифеста](https://www.npmjs.com/package/gatsby-plugin-manifest). (Не забудьте указать плагин сервис-воркера (offline) после плагина манифеста, чтобы в файл манифеста можно было указать сервис-воркер.)
+Мы рекомендуем использовать этот плагин вместе с [плагином манифеста](https://www.npmjs.com/package/gatsby-plugin-manifest). (Не забудьте добавить offline плагин после плагина манифеста, чтобы файл манифеста был включен в сервис-воркер.)
 
 ### Установка `gatsby-plugin-offline`
 
@@ -27,4 +27,4 @@ plugins: [`gatsby-plugin-offline`]
 ## References
 
 - [Сервис-воркеры: введение](https://developers.google.com/web/fundamentals/primers/service-workers/)
-- [Service Worker API](https://developer.mozilla.org/ru/docs/Web/API/Service_Worker_API)
+- [Сервис-воркеры: API](https://developer.mozilla.org/ru/docs/Web/API/Service_Worker_API)
