@@ -6,9 +6,9 @@ title: Добавление файла манифеста
 
 Но для начала выясним, чем _является_ PWA?
 
-Это обычные сайты, использующие функциональность современных браузеров, для расширения обычного поведения сайта специальными возможностями, подобно приложениям. Посмотрите [обзор от Google](https://developers.google.com/web/progressive-web-apps/), чтобы понять что предоставляет PWA, и [документацию по прогрессивным веб-приложениям (PWA)](/docs/progressive-web-app/), чтобы узнать, почему сайт на Gatsby является PWA.
+Это обычные сайты, использующие функциональность современных браузеров для расширения обычного поведения сайта специальными возможностями, подобно приложениям. Посмотрите [обзор от Google](https://developers.google.com/web/progressive-web-apps/), чтобы понять, что предоставляет PWA, и [документацию по прогрессивным веб-приложениям (PWA)](/docs/progressive-web-app/), чтобы узнать, почему сайт на Gatsby является PWA.
 
-Подключение файла манифеста веб-приложения - это один из трех общепринятых [основных требований PWA](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa#section1).
+Подключение файла манифеста веб-приложения ― это одно из трех общепринятых [основных требований PWA](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa#section1).
 
 Цитируя [Google](https://developers.google.com/web/fundamentals/web-app-manifest/):
 
@@ -43,7 +43,7 @@ npm install --save gatsby-plugin-manifest
         // см. https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
         icon: "src/images/icon.png", // путь относительно корня сайта.
-        // Дополнительные атрибут, добавляющий проверку CORS.
+        // Дополнительный атрибут, добавляющий проверку CORS.
         // Если вы не укажите опцию crossOrigin, настройки CORS не будут добавлены в манифест.
         // Любая некорректная или пустая строка по умолчанию преобразуется в `anonymous`
         crossOrigin: `use-credentials`,
@@ -53,4 +53,4 @@ npm install --save gatsby-plugin-manifest
 }
 ```
 
-Это всё, что нужно для добавления манифеста в Gatsby-сайт. Этот пример иллюстрирует базовую настройку плагина -- изучите [его описание](/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest#automatic-mode), чтобы узнать о расширенных настройках.
+Это всё, что нужно для добавления манифеста в Gatsby-сайт. Этот пример иллюстрирует базовую настройку плагина ― изучите [его описание](/packages/gatsby-plugin-manifest/?=gatsby-plugin-manifest#automatic-mode), чтобы узнать о расширенных настройках.
