@@ -8,7 +8,7 @@ title: Добавление метаданных страницы
 
 [React Helmet](https://github.com/nfl/react-helmet) ― React-компонент для управления содержимым [head документа](https://developer.mozilla.org/ru/docs/Web/HTML/Element/head).
 
-Gatsby-плагин [react helmet](/packages/gatsby-plugin-react-helmet/) предлагает встроенную поддержку для сгенерированных сервером данных, добавленных с помощью React Helmet. При использовании этого плагина, атрибуты, которые вы добавили в React Helmet, будут включены в статические HTML-страницы, которые собирает Gatsby.
+[Плагин React Helmet](/packages/gatsby-plugin-react-helmet/) для Gatsby предлагает встроенную поддержку для сгенерированных сервером данных, добавленных с помощью React Helmet. При использовании этого плагина, атрибуты, которые вы добавили в React Helmet, будут включены в статические HTML-страницы, которые собирает Gatsby.
 
 ### Использование `React Helmet` и `gatsby-plugin-react-helmet`
 
