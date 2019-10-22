@@ -24,7 +24,7 @@ title: Добавление сервис-воркера
 plugins: [`gatsby-plugin-offline`]
 ```
 
-## References
+## Ссылки
 
 - [Сервис-воркеры: введение](https://developers.google.com/web/fundamentals/primers/service-workers/)
 - [Сервис-воркеры: API](https://developer.mozilla.org/ru/docs/Web/API/Service_Worker_API)
