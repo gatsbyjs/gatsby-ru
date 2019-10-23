@@ -18,7 +18,7 @@ title: Добавление метаданных страницы
 npm install --save gatsby-plugin-react-helmet react-helmet
 ```
 
-2. Добавьте массив `plugins` в ваш файл `gatsby-config.js`.
+2. Добавьте плагин в массив `plugins` в файле `gatsby-config.js`.
 
 ```javascript:title=gatsby-config.js
 {
