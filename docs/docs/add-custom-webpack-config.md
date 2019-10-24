@@ -1,44 +1,47 @@
 ---
-title: "Adding a Custom webpack Config"
+title: "Добавление пользовательского файла конфигурации Webpack"
 ---
 
-_Before creating custom webpack configuration, check to see if there's a Gatsby
-plugin already built that handles your use case in the
-[plugins section](/docs/plugins/). If there's not yet one and your use case is a
-general one, we highly encourage you to contribute back your plugin to the
-Gatsby Plugin Library so it's available to others (including your future self 😀)._
+_Перед созданием пользовательского файла конфигурации Webpack проверьте наличие
+уже существующего Gatsby плагина, который решает вашу проблему в [разделе плагинов](/docs/plugins/).
+Если таковой отсутствует, а ваш случай распространен, пожалуйста, добавьте ваш плагин в
+библиотеку плагинов Gatsby. Так им смогут воспользоваться другие люди (включая вас самого в
+будущем 😀)._
 
-To add custom webpack configurations, create (if there's not one already) a
-`gatsby-node.js` file in your root directory. Inside this file, export a
-function called `onCreateWebpackConfig`.
+Чтобы добавить пользовательский файл конфигурации Webpack необходимо создать
+(если уже не создан) `gatsby-node.js` файл в корневой директории. Внутри этого файла
+сделайте экспорт функции с именем `onCreateWebpackConfig`.
 
-When Gatsby creates its webpack config, this function will be called allowing
-you to modify the default webpack config using
+Когда Gatsby будет генерировать собственный файл конфигурации Webpack, эта функция
+будет вызвана и позволит вам изменить настройку Webpack по умолчанию с помощью
 [webpack-merge](https://github.com/survivejs/webpack-merge).
 
-Gatsby does multiple webpack builds with somewhat different configuration. We
-call each build type a "stage". The following stages exist:
+Gatsby генерирует несколько сборок webpack с несколько отличной друг от друга
+конфигурацией. Мы называет каждую из таких сборок "стадия". Существуют следующие стадии:
 
-1.  develop: when running the `gatsby develop` command. Has configuration for hot
-    reloading and CSS injection into page
-2.  develop-html: same as develop but without react-hmre in the babel config for
-    rendering the HTML component.
-3.  build-javascript: production JavaScript and CSS build. Creates route JS bundles as well
-    as commons chunks for JS and CSS.
-4.  build-html: production build static HTML pages
+1.  develop: при запуске `gatsby develop` команды. Имеет настройку для hot reloading и CSS
+    инъекций на страницу
+2.  develop-html: то же самое, что и develop, но без react-hmre в конфигурации babel для рендеринга
+    HTML компонента.
+3.  build-javascript: JavaScript и CSS сборка для продакшен.
+4.  build-html: продакшен сборка статических HTML страниц
 
-Check
-[webpack.config.js](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/src/utils/webpack.config.js)
-for the source.
+Ознакомьтесь с исходным кодом в
+[webpack.config.js](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/src/utils/webpack.config.js).
 
 There are many plugins in the Gatsby repo using this API to look to for examples
 e.g. [Sass](/packages/gatsby-plugin-sass/),
 [TypeScript](/packages/gatsby-plugin-typescript/),
 [Glamor](/packages/gatsby-plugin-glamor/), and many more!
 
-## Examples
+Примеры использования данного API можно найти в плагинах, находящихся в
+Gatsby репозитории, таких как [Sass](/packages/gatsby-plugin-sass/),
+[TypeScript](/packages/gatsby-plugin-typescript/),
+[Glamor](/packages/gatsby-plugin-glamor/) и многих других.
 
-Here is an example adding an additional global variable via the `DefinePlugin` and the `less-loader`:
+## Примеры
+
+Пример добавления дополнительной глобальной переменной с помощью `DefinePlugin` и `less-loader`:
 
 ```js:title=gatsby-node.js
 exports.onCreateWebpackConfig = ({
@@ -46,7 +49,7 @@ exports.onCreateWebpackConfig = ({
   rules,
   loaders,
   plugins,
-  actions,
+  actions
 }) => {
   actions.setWebpackConfig({
     module: {
@@ -62,18 +65,18 @@ exports.onCreateWebpackConfig = ({
             // the postcss loader comes with some nice defaults
             // including autoprefixer for our configured browsers
             loaders.postcss(),
-            `less-loader`,
-          ],
-        },
-      ],
+            `less-loader`
+          ]
+        }
+      ]
     },
     plugins: [
       plugins.define({
-        __DEVELOPMENT__: stage === `develop` || stage === `develop-html`,
-      }),
-    ],
-  })
-}
+        __DEVELOPMENT__: stage === `develop` || stage === `develop-html`
+      })
+    ]
+  });
+};
 ```
 
 ### Absolute imports
@@ -84,10 +87,10 @@ Instead of writing `import Header from '../../components/header'` over and over 
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
   actions.setWebpackConfig({
     resolve: {
-      modules: [path.resolve(__dirname, "src"), "node_modules"],
-    },
-  })
-}
+      modules: [path.resolve(__dirname, "src"), "node_modules"]
+    }
+  });
+};
 ```
 
 You can always find more information on _resolve_ and other options in the official [Webpack docs](https://webpack.js.org/concepts/).
@@ -98,7 +101,7 @@ You need this if you want to do things like transpile parts of `node_modules`.
 
 ```js:title=gatsby-node.js
 exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
-  const config = getConfig()
+  const config = getConfig();
 
   config.module.rules = [
     // Omit the default rule where test === '\.jsx?$'
@@ -125,11 +128,11 @@ exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
       // Exclude all node_modules from transpilation, except for 'swiper' and 'dom7'
       exclude: modulePath =>
         /node_modules/.test(modulePath) &&
-        !/node_modules\/(swiper|dom7)/.test(modulePath),
-    },
-  ]
+        !/node_modules\/(swiper|dom7)/.test(modulePath)
+    }
+  ];
 
   // This will completely replace the webpack config with the modified object.
-  actions.replaceWebpackConfig(config)
-}
+  actions.replaceWebpackConfig(config);
+};
 ```
