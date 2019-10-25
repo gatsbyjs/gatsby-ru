@@ -42,7 +42,7 @@ exports.onCreateWebpackConfig = ({
   rules,
   loaders,
   plugins,
-  actions
+  actions,
 }) => {
   actions.setWebpackConfig({
     module: {
@@ -59,18 +59,18 @@ exports.onCreateWebpackConfig = ({
             // postcss loader обладает отличными настройками по умолчанию,
             // включая autoprefixer для указанных нами браузеров
             loaders.postcss(),
-            `less-loader`
-          ]
-        }
-      ]
+            `less-loader`,
+          ],
+        },
+      ],
     },
     plugins: [
       plugins.define({
-        __DEVELOPMENT__: stage === `develop` || stage === `develop-html`
-      })
-    ]
-  });
-};
+        __DEVELOPMENT__: stage === `develop` || stage === `develop-html`,
+      }),
+    ],
+  })
+}
 ```
 
 ### Абсолютные импорты
@@ -82,10 +82,10 @@ exports.onCreateWebpackConfig = ({
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
   actions.setWebpackConfig({
     resolve: {
-      modules: [path.resolve(__dirname, "src"), "node_modules"]
-    }
-  });
-};
+      modules: [path.resolve(__dirname, "src"), "node_modules"],
+    },
+  })
+}
 ```
 
 Более подробная информация о _resolve_ и других опциях в официальной [документации Webpack](https://webpack.js.org/concepts/).
@@ -96,7 +96,7 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
 
 ```js:title=gatsby-node.js
 exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
-  const config = getConfig();
+  const config = getConfig()
 
   config.module.rules = [
     // Опустим правило test === '\.jsx?$', выставленное по умолчанию
@@ -123,11 +123,11 @@ exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
       // Исключаем все node_modules из транспиляции, кроме 'swiper' и 'dom7'
       exclude: modulePath =>
         /node_modules/.test(modulePath) &&
-        !/node_modules\/(swiper|dom7)/.test(modulePath)
-    }
-  ];
+        !/node_modules\/(swiper|dom7)/.test(modulePath),
+    },
+  ]
 
   // Эта строка полностью заменит конфиг webpack на модифицированный объект
-  actions.replaceWebpackConfig(config);
-};
+  actions.replaceWebpackConfig(config)
+}
 ```
