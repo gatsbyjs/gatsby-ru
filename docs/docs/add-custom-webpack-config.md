@@ -101,7 +101,7 @@ exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
   const config = getConfig()
 
   config.module.rules = [
-    // Опустим правило по умолчанию test === '\.jsx?$'
+    // Опустим правило по умолчанию, где test === '\.jsx?$'
     ...config.module.rules.filter(
       rule => String(rule.test) !== String(/\.jsx?$/)
     ),
