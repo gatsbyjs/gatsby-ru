@@ -12,20 +12,20 @@ Gatsby-плагин, который решает вашу проблему, в
 `gatsby-node.js` файл в корневой директории. Внутри этого файла экспортируйте
 функцию с именем `onCreateWebpackConfig`.
 
-При создании собственной webpack конфигурации Gatsby вызовет эту функцию,
+При создании собственной webpack-конфигурации Gatsby вызовет эту функцию,
 позволяя вам изменить настройку webpack по умолчанию с помощью
 [webpack-merge](https://github.com/survivejs/webpack-merge).
 
 Gatsby генерирует ряд webpack-сборок с несколько отличной друг от друга конфигурацией.
 Каждую из таких сборок мы называем "стадия". Существуют следующие стадии:
 
-1.  develop: при запуске `gatsby develop` команды. Включает настройку для hot
-    reloading и добавления CSS на страницу.
+1.  develop: при запуске `gatsby develop` команды. Включает настройку для перезагрузки
+    и добавления CSS на страницу.
 2.  develop-html: то же самое, что и develop, но без react-hmre в конфигурации babel для
-    рендеринга HTML компонента.
-3.  build-javascript: продакшен сборка JavaScript и CSS. Создает как маршрут для JS бандлов,
+    рендеринга HTML-компонента.
+3.  build-javascript: продакшен-сборка JavaScript и CSS. Создает как маршрут для JS-бандлов,
     так и чанки с общим кодом для JS и CSS.
-4.  build-html: продакшен сборка статических HTML страниц.
+4.  build-html: продакшен-сборка статических HTML-страниц.
 
 Ознакомьтесь с
 [webpack.config.js](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/src/utils/webpack.config.js)
@@ -78,7 +78,7 @@ exports.onCreateWebpackConfig = ({
 
 ### Абсолютные импорты
 
-Вместо указывания `import Header from '../../components/header'` снова и снова, вы можете просто писать `import Header from 'components/header'` с абсолютными импортами:
+Вместо написания `import Header from '../../components/header'` снова и снова, вы можете сократить запись до `import Header from 'components/header'` с абсолютными импортами:
 
 ```js:title=gatsby-node.js
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
@@ -92,7 +92,7 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
 
 Более подробная информация о _resolve_ и других опциях в официальной [документации Webpack](https://webpack.js.org/concepts/).
 
-### Модифицируем babel loader
+### Изменение загрузчика babel
 
 Это понадобится вам, если захотите сделать что-то наподобие транспилинга отдельных частей `node_modules`.
 
@@ -115,8 +115,8 @@ exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
       //   loader: '/path/to/node_modules/gatsby/dist/utils/babel-loader.js',
       // }
       // Если вы не собираетесь менять Babel на другой транспилер, вам, вероятно,
-      // понадобится это для того, чтобы Gatsby применил необходимые Babel
-      // пресеты/плагины. Также будет добавлена ваша конфигурация из
+      // понадобится это для того, чтобы Gatsby применил необходимые пресеты/плагины
+      // Babel. Также будет добавлена ваша конфигурация из
       // `babel.config.js`.
       ...loaders.js(),
 
@@ -129,7 +129,7 @@ exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
     },
   ]
 
-  // Это полностью заменит конфигурацию webpack на модифицированный объект.
+  // Это полностью заменит конфигурацию webpack на измененный объект.
   actions.replaceWebpackConfig(config)
 }
 ```
