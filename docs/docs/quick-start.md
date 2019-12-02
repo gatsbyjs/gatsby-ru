@@ -1,64 +1,64 @@
 ---
-title: "Quick Start"
+title: "Быстрый старт"
 ---
 
-This quick start is intended for intermediate to advanced developers. For a gentler intro to Gatsby, [head to our tutorial](/tutorial/)!
+Быстрый старт предназначен для средних и продвинутых разработчиков. Для более легкого начала работы с Gatsby, [начните с нашего руководства](/tutorial/)!
 
-## Use the Gatsby CLI
+## Использование Gatsby CLI
 
 <EggheadEmbed
   lessonLink="https://egghead.io/lessons/gatsby-quick-start-with-gatsby-create-develop-and-build-gatsby-sites-from-the-command-line"
-  lessonTitle="Quick Start with Gatsby: Create, Develop, and Build Gatsby Sites From the Command Line"
+  lessonTitle="Быстрый старт с Gatsby: создавайте, разрабатывайте и собирайте Gatsby сайты из командной строки"
 />
 
-### Install the Gatsby CLI.
+### Установка Gatsby CLI.
 
 ```shell
 npm install -g gatsby-cli
 ```
 
-### Create a new site.
+### Создание нового сайта.
 
 ```shell
 gatsby new gatsby-site
 ```
 
-### Change directories into site folder.
+### Изменение директории на папку с сайтом.
 
 ```shell
 cd gatsby-site
 ```
 
-### Start development server.
+### Запуск сервера разработки.
 
 ```shell
 gatsby develop
 ```
 
-Gatsby will start a hot-reloading development environment accessible by default at `localhost:8000`.
+Gatsby запустит рабочее окружение с горячей перезагрузкой доступное по умолчанию на `localhost:8000`.
 
-Try editing the JavaScript pages in `src/pages`. Saved changes will live reload in the browser.
+Попробуйте изменить страницы с JavaScript в `src/pages`. Сохранённые изменения автоматически перезагружаются в браузере.
 
-### Create a production build.
+### Создание продакшен-сборки.
 
 ```shell
 gatsby build
 ```
 
-Gatsby will perform an optimized production build for your site, generating static HTML and per-route JavaScript code bundles.
+Gatsby выполнит оптимизированную продакшен-сборку для вашего сайта, генерируя статические HTML и бандлы JavaScript для каждого маршрута.
 
-### Serve the production build locally.
+### Запуск продакшен-сборки локально.
 
 ```shell
 gatsby serve
 ```
 
-Gatsby starts a local HTML server for testing your built site. Remember to build your site using `gatsby build` before using this command.
+Gatsby запускает локальный HTML сервер для тестирования созданного вами сайта. Не забудьте создать свой сайт, используя `gatsby build`, перед использованием этой команды.
 
-### Access documentation for CLI commands
+### Доступ к документации для CLI команд
 
-To see detailed documentation for the CLI commands, run `gatsby --help` in the terminal.
+Чтобы просмотреть подробную документацию по CLI командам, выполните `gatsby --help` в терминале.
 
-For specific commands, run `gatsby COMMAND_NAME --help` e.g. `gatsby new --help`.
+Для определённых команд выполните `gatsby НАЗВАНИЕ_КОМАНДЫ --help`, например `gatsby new --help`.
 
-For more information on the Gatsby CLI, visit the [CLI reference](/docs/gatsby-cli/) section of the docs.
+Для получения дополнительной информации о Gatsby CLI посетите [раздел CLI](/docs/gatsby-cli/) в документации.

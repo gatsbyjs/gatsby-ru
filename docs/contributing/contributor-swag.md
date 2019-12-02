@@ -1,24 +1,24 @@
 ---
-title: Free Swag for Gatsby Contributors!
+title: Бесплатные ништяки для соавторов Gatsby!
 ---
 
-Gatsby relies on contributors from the open source community, and we want to make sure you know how much it means to us that you’re willing to put time and effort into [contributing to Gatsby](/contributing/how-to-contribute/).
+Gatsby рассчитывает на помощь людей из open source сообщества, и мы хотим показать, как много для нас значат время и силы, которые ты [вкладываешь в Gatsby](/contributing/how-to-contribute/).
 
-To show our appreciation, _**everyone who contributes to Gatsby is eligible to receive free swag!**_
+В знак благодарности _**все, кто вносит свой вклад в разработку Gatsby, могут претендовать на получение бесплатных ништяков!**_
 
-![Gatsby contributors wearing swag.](./images/gatsby-swag.jpg)
+![Соавторы Gatsby в ништяках.](./images/gatsby-swag.jpg)
 
-### How to claim your free swag
+### Как получить бесплатные ништяки
 
-If you contribute to the Gatsby org on GitHub, you can claim your swag by [logging into the Gatsby Store](https://store.gatsbyjs.org/) and requesting a discount code. With five or more contributions, you can claim your _**Level 2**_ swag.
+Если ты внесёшь вклад в развитие организации Gatsby на GitHub, ты можешь получить свои ништяки, [авторизовавшись в Магазине Gatsby](https://store.gatsbyjs.org/) и запросив скидочный код. Оказав помощь проекту 5 раз и более, ты сможешь заказать ништяки _**Уровня 2**_.
 
-If you’ve contributed in other ways, such as giving talks about Gatsby, teaching others to use it, writing Gatsby articles/tutorials, participating in a Gatsby research project, or any other way, please email <mailto:marketing@gatsbyjs.com> or [tweet at Gatsby on Twitter](https://twitter.com/gatsbyjs) to claim your swag.
+Если ты внёс свой вклад другим образом, например, рассказывая о Gatsby, обучая других людей пользоваться им, публикуя статьи/руководства по Gatsby, участвуя в исследовательском проекте Gatsby, или как-то ещё, пожалуйста, напиши на электронную почту <mailto:marketing@gatsbyjs.com> или в [Twitter](https://twitter.com/gatsbyjs), чтобы получить свои ништяки.
 
-### Details about free swag
+### Подробнее о бесплатных ништяках
 
-- We will send one item from our [swag store](https://store.gatsbyjs.org/) per swag tier
-- Not all items are eligible due to high cost to create the swag. We’ll make it clear which items are not eligible
-- There’s a limit of one free swag item per swag tier
-- Shipping is free worldwide
+- Мы отправим одну вещь из нашего [магазина ништяков](https://store.gatsbyjs.org/) за каждый достигнутый уровень крутости.
+- Не все вещи можно заказать бесплатно из-за их высокой себестоимости. Мы расскажем более подробно, какие это предметы.
+- Существует лимит на одну бесплатную вещь за каждый уровень крутости.
+- Бесплатная доставка по всему миру.
 
-> **NOTE:** Worldwide free shipping is a pilot program. If shipping costs get out of control, we may need to adjust this policy in the future.
+> **Примечание:** Бесплатная доставка по всему миру является пилотной программой. Если стоимость доставки выйдет из-под контроля, мы будем вынуждены пересмотреть данную политику в будущем.

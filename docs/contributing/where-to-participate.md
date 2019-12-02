@@ -1,22 +1,22 @@
 ---
-title: Where to Participate in the Community
+title: Где поучаствовать в жизни сообщества
 ---
 
-We want contributing to Gatsby to be fun, enjoyable, and educational for anyone and everyone. If you're interested in participating in the Gatsby.js community, contributions go far beyond pull requests and commits. We are thrilled to receive a variety of other contributions including the following:
+Мы хотим, чтобы внесение вклада в развитие Gatsby было веселым, приятным и познавательным процессом для всех и каждого. Если вы хотите  поучаствовать в сообществе Gatsby.js, то вносить свой вклад можно далеко не только пулреквестами и ишью. Мы очень рады различной помощи, включая следующее:
 
-- Blogging, speaking about, or creating tutorials about one of Gatsby's many features. Mention [@gatsbyjs on Twitter](https://twitter.com/gatsbyjs) and/or email marcy [at] gatsbyjs [dot] com so we can give pointers and tips (if you want them 😄) and help you spread the word. Please add your blog posts and videos of talks to our [Awesome Gatsby](/docs/awesome-gatsby/) page.
-- Presenting at meetups and conferences about your Gatsby projects. Your unique challenges and successes in building things with Gatsby can provide great speaking material. We'd love to review your talk abstract/CFP, so get in touch with us if you'd like some help!
-- [Submitting new feature ideas through an RFC](/blog/2018-04-06-introducing-gatsby-rfc-process/)
-- Submitting new documentation; titles in the side navigation on [docs](/docs) which are lighter in color on gatsbyjs.org are stubs and need contributions
-- Tweeting about things you [#buildwithgatsby](https://twitter.com/search?q=%23buildwithgatsby) (make sure to use the hashtag and/or @ mention us!)
-- Submitting documentation updates, enhancements, designs, or bug fixes
-- Submitting spelling or grammar fixes
-- Adding unit or functional tests
-- Triaging [GitHub issues](https://github.com/gatsbyjs/gatsby/issues) -- especially determining whether an issue still persists or is reproducible
-- [Reporting bugs or issues](/contributing/how-to-file-an-issue/)
-- Searching for Gatsby on [Discord](https://gatsby.dev/discord) or [Spectrum](https://spectrum.chat/gatsby-js) and helping someone else who needs help
-- Teaching others how to contribute to Gatsby's repo!
+- Написание блогов, выступление с речью или создание руководств об одной из многих функций Gatsby. Упомяните [@gatsbyjs в Twitter](https://twitter.com/gatsbyjs) и/или напишите электронное сообщение на адрес marcy [собака] gatsbyjs [точка] com, чтобы мы могли дать подсказки, советы (если они вам нужны 😄) и распространить информацию. Пожалуйста, добавьте свои блог-посты и видео выступлений на нашу страницу [Потрясающего Gatsby](/docs/awesome-gatsby/).
+- Выступление на встречах и конференциях с докладами о ваших проектах на Gatsby. Вызовы, с которыми вы столкнулись во время построения вещей с Gatsby, и успехи, которых достигли, уникальны и могут служить отличным материалом для выступления. Мы будем рады дать рецензию на краткое содержание статьи/тезисы конференции, поэтому свяжитесь с нами, если вам нужна помощь!
+- [Предложение новых идей через RFC](/blog/2018-04-06-introducing-gatsby-rfc-process/)
+- Предложение новой документации; заголовки боковой панели в [документации](/docs), которые отображаются светлее на gatsbyjs.org, являются заглушками и нуждаются в написании
+- Написание в Twitter о вещах, которые вы [#buildwithgatsby](https://twitter.com/search?q=%23buildwithgatsby) (убедитесь, что вы используете хештег и/или @ упоминаете нас!)
+- Предложение обновления, обогащения, переработки или исправления документации
+- Предложение исправлений орфографических и грамматических ошибок
+- Добавление модульных или функциональных тестов
+- Приоритизация [ишью на GitHub](https://github.com/gatsbyjs/gatsby/issues) -- особенно установка факта, является ли проблема до сих пор актуальной или воспроизводимой
+- [Сообщение об ошибках или проблемах](/contributing/how-to-file-an-issue/)
+- Помощь участникам Gatsby в [Discord](https://gatsby.dev/discord) или [Spectrum](https://spectrum.chat/gatsby-js)
+- Обучение других тому, как внести вклад в репозиторий Gatsby!
 
-As our way of saying “thank you” to our contributors, **_all contributors_ are eligible for [free Gatsby swag](/contributing/contributor-swag/)** — whether you’re contributing code, docs, a talk, an article, or something else that helps the Gatsby community. [Learn how to claim free swag for contributors.](/contributing/contributor-swag/)
+В качестве способа сказать "спасибо" нашим соавторам, **_все соавторы_ могут претендовать на [бесплатные ништяки от Gatsby](/contributing/contributor-swag/)** — внесли ли вы вклад в код, документацию, выступление, статью или что-то другое, что помогает сообществу Gatsby. [Узнайте, как получить бесплатные ништяки для соавторов.](/contributing/contributor-swag/)
 
-Learn more about how to participate in Gatsby.js in our [How to Contribute](/contributing/how-to-contribute/) page.
+Узнайте больше о том, как участвовать в Gatsby.js на нашей странице [Как внести свой вклад](/contributing/how-to-contribute/).
