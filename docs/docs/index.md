@@ -1,35 +1,35 @@
 ---
-title: Gatsby.js Documentation
+title: Документация Gatsby.js
 disableTableOfContents: true
 ---
 
 import EmailCaptureForm from "../../www/src/components/email-capture-form"
 
-Gatsby is a blazing fast modern site generator for React.
+Gatsby это быстрый и современный генератор сайтов для React.
 
-## Get Started
+## Для Начала
 
-There are two main ways to get started with Gatsby:
+Существует два главных способа как можно начать работать с Gatsby:
 
-1. [Tutorial](/tutorial/): Step-by-step instructions on how to install Gatsby and start a project: written for people without Gatsby or web development experience, though these learning resources have helped developers of all skill levels.
-2. [Quick start](/docs/quick-start): One page summary of how to install Gatsby and start a new project.
+1. [Руководство](/tutorial/): Пошаговая инструкция по установке и работе с Gatsby: будет полезна как опытным разработчикам, так и новичкам, которые не имеют опыта в веб-разработке и никогда не работали с Gatsby.
+2. [Быстрое Начало](/docs/quick-start): Краткая инструкция по тому как начать работать с Gastby.
 
-## Go further
+## Далее
 
-1. [Recipes](/docs/recipes/): Find some quick answers for how to accomplish some specific, common tasks with Gatsby.
-2. Choose your own adventure and peruse the various sections of the Gatsby docs:
+1. [Рецепты](/docs/recipes/): Найдите быстрые ответы о том, как решить те или иные задачи с Gatsby.
+2. Выберите для себя по каким секциям документации Gatsby вы хотели бы пройтись:
 
-   - [Reference Guides](/docs/guides/): Learn about the many different topics around building with Gatsby, like sourcing data, deployment, and more.
-   - [Gatsby API Reference](/docs/api-reference/): Learn more about Gatsby APIs and configuration.
-   - [Releases & Migration](/docs/releases-and-migration/): Find release notes and guides for migration between major versions.
-   - [Conceptual Guide](/docs/conceptual-guide/): Read high-level overviews of the Gatsby approach.
-   - [Gatsby Internals](/docs/gatsby-internals/): Dig into how Gatsby works behind the scenes.
-   - [Using Gatsby Professionally](/docs/using-gatsby-professionally/): Learn tips and tricks for how to explain Gatsby to others at work, so that you have more opportunities to work with Gatsby professionally.
+   - [Справочное Руководство](/docs/guides/): Изучайте разные темы по работе с Gatsby, например  получение данных, публикация и другие.
+   - [Руководство по Gatsby API](/docs/api-reference/): Узнайте больше о Gatsby API.
+   - [Релиз и Миграция](/docs/releases-and-migration/): Найдите заметки о релизах и руководства по миграции между основными версиями.
+   - [Концептуальное Руководство](/docs/conceptual-guide/): Прочтите высокоуровневые обзоры о подходах к Gatsby.
+   - [Gatsby Изнутри](/docs/gatsby-internals/): Узнайте о том как Gatsby устроен изнутри.
+   - [Профессиональное использование Gatsby](/docs/using-gatsby-professionally/): Узнайте советы и рекомендации по тому, как объяснить Gatsby коллегам по работе, чтобы получить дополнительный опыт работы с Gatsby.
 
-3. Check out the [Ecosystem](/ecosystem/) libraries for Gatsby starters and plugins, as well as external community resources.
+3. Проверьте библиотеки [Экосистемы](/ecosystem/) для стартеров и плагинов Gatsby, а также сторонние ресурсы сообщества.
 
-## Start contributing
+## Начните делать вклад
 
-Visit the [Contributing](/contributing/) section to find guides on the Gatsby community, code of conduct, and how to get started contributing to Gatsby.
+Посетите раздел [Вклад](/contributing/), чтобы найти руководства по сообществу Gatsby, правилам поведения, и тому, как сделать вклад в Gatsby.
 
-<EmailCaptureForm signupMessage="Want to keep up with the latest tips &amp; tricks? Subscribe to our newsletter!" />
+<EmailCaptureForm signupMessage="Хотите быть в курсе последних советов и рекомендаций? Подпишитесь на нашу рассылку!" />
