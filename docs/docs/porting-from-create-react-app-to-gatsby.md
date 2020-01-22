@@ -61,7 +61,7 @@ The following sections explain the above steps as well as other changes that you
 
 To show some of the differences of how your project structure could differ by moving to Gatsby, a default Create React App project looks something like this:
 
-```
+```text
   my-create-react-app
   ├── .git
   ├── .gitignore
@@ -121,6 +121,7 @@ Some common globals that would need to be protected are:
 
 - `window`
 - `localStorage`
+- `sessionStorage`
 - `navigator`
 
 Additionally, some packages that depend on globals existing (e.g. `react-router-dom`) may need to be [patched](/docs/debugging-html-builds/#fixing-third-party-modules) or migrated to other packages.
@@ -163,6 +164,12 @@ const Foo = () => {
 export default Foo
 ```
 
+If these browser globals aren't protected correctly, you'll see a webpack error like the one below when building your site:
+
+```text
+WebpackError: ReferenceError: window is not defined
+```
+
 For more information about errors encountered during builds, see the doc on [debugging HTML builds](/docs/debugging-html-builds/). For more information about React hooks, check out the [React docs](https://reactjs.org/docs/hooks-effect.html).
 
 ### Routing
@@ -171,7 +178,7 @@ There are two possibilities of routes that you can set up: static and client-onl
 
 > **Note**: An advantage to having pages in separate files like this is a defined way of [automatically code splitting](/docs/how-code-splitting-works/), whereas Create React App requires you to use the `import()` syntax to assign what elements should be loaded dynamically
 
-For dynamic routes, you should implement routing with [@reach/router](https://reach.tech/router), which is already included with Gatsby. Dynamic routes can be implemented the same way you would implement a router in Create React App (or any other React application). However, because these routes won't be represented as HTML files in the final build, if you want users to be able to visit the routes directly (like entering the URL in the search bar), you'll need to generate pages in the `gatsby-node.js` file which is demonstrated in the [Building Apps with Gatsby](/docs/building-apps-with-gatsby/) guide.
+For dynamic routes, you should implement routing with [@reach/router](https://reach.tech/router), which is already included with Gatsby. Dynamic routes can be implemented the same way you would implement a router in Create React App (or any other React application). However, because these routes won't be represented as HTML files in the final build, if you want users to be able to visit the routes directly (like entering the URL in the search bar), you'll need to generate pages in the `gatsby-node.js` file which is demonstrated in the [Building Apps with Gatsby](/docs/adding-app-and-website-functionality/) guide.
 
 ```jsx
 import React from "react"
