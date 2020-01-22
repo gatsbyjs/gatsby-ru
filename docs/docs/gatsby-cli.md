@@ -26,7 +26,22 @@ Gatsby CLI (`gatsby-cli`) упакован как исполняемый фай�
 
 ### `new`
 
-`gatsby new gatsby-site`
+```shell
+gatsby new [<site-name> [<starter-url>]]
+```
+
+#### Arguments
+
+| Argument    | Description                                                                                                                                                                                                     |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| site-name   | Your Gatsby site name, which is also used to create a project directory.                                                                                                                                        |
+| starter-url | A Gatsby starter URL or local file path. Defaults to [gatsby-starter-default](https://github.com/gatsbyjs/gatsby-starter-default); see the [Gatsby starters](/docs/gatsby-starters/) docs for more information. |
+
+> Note: The `site-name` should only consist of letters and numbers. If you specify a `.`, `./` or a `<space>` in the name, `gatsby new` will throw an error.
+
+#### Examples
+
+- Create a Gatsby site named `my-awesome-site` using the default starter:
 
 Смотрите [документацию стартеров Gatsby](/docs/starters/)
 с полным списком стартеров, чтобы начать использовать Gatsby.
@@ -41,10 +56,10 @@ Gatsby CLI (`gatsby-cli`) упакован как исполняемый фай�
 
 |     Опция       | Описание                                        |
 | :-------------: | ----------------------------------------------- |
-| `-H`, `--host`  | Установить хост. По умолчанию localhost         |
-| `-p`, `--port`  | Установить порт. По умолчанию 8000              |
-| `-o`, `--open`  | Открыть сайт в вашем браузере (по умолчанию)    |
-| `-S`, `--https` | Использовать HTTPS                              |
+| `-H`, `--host`  | Set host. Defaults to localhost                 |
+| `-p`, `--port`  | Set port. Defaults to env.PORT or 8000          |
+| `-o`, `--open`  | Open the site in your (default) browser for you |
+| `-S`, `--https` | Use HTTPS                                       |
 
 Следуйте [инструкции Local HTTPS](/docs/local-https/)
 чтобы узнать, как настроить сервер разработки HTTPS с помощью Gatsby.
@@ -59,7 +74,7 @@ gatsby develop -H 0.0.0.0
 
 Затем терминал будет регистрировать информацию, как обычно, но дополнительно будет включать URL, по которому вы можете перейти от клиента в той же сети, чтобы увидеть, как отображается сайт.
 
-```
+```shell
 You can now view gatsbyjs.org in the browser.
 ⠀
   Local:            http://0.0.0.0:8000/
