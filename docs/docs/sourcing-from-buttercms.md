@@ -634,7 +634,7 @@ Now go back to your workspace and update your heading and FAQ items.
 
 ## Integrate into your application
 
-```javascript:title=src/pages/faq.js
+```jsx:title=src/pages/faq.js
 import React from "react"
 import { graphql } from "gatsby"
 

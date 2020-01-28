@@ -152,7 +152,7 @@ Gatsby из коробки поддерживает CSS модули. Этот �
 
 1. Создайте новый каталог в `src/components`, а затем внутри создайте файл с именем `container.js` и вставьте следующее:
 
-```javascript:title=src/components/container.js
+```jsx:title=src/components/container.js
 import React from "react"
 import containerStyles from "./container.module.css"
 
@@ -177,7 +177,7 @@ export default ({ children }) => (
 3. Сделаем новую страницу, создав файл в
 `src/pages/about-css-modules.js`:
 
-```javascript:title=src/pages/about-css-modules.js
+```jsx:title=src/pages/about-css-modules.js
 import React from "react"
 
 import Container from "../components/container"

@@ -13,7 +13,7 @@ A **Gatsby theme starter** creates a new Gatsby site that installs and configure
 Installing the Gatsby blog theme starter is the same process as a regular Gatsby starter:
 
 ```shell
-gatsby new my-blog https://github.com/gatsbyjs/gatsby-starter-blog-theme
+npm install --save gatsby-theme-blog
 ```
 
 ## What does a theme starter do?

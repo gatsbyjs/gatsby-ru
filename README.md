@@ -1,3 +1,41 @@
-# Gatsby Internationalization Source
+# Gatsby на русском
 
-This is a template repo copied over from [gatsbyjs/gatsby](https://github.com/gatsbyjs/gatsby) containing all content that needs to be translated. It is used as a basis for translations. **Do not commit directly to this repo**.
+Официальный русский перевод документации Gatsby.
+
+## Переводчикам
+
+Нашли ошибку в переводе? Пожалуйста, [создайте ишью](https://github.com/gatsbyjs/gatsby-ru/issues/new).
+
+Если хотите исправить ошибку или есть желание помочь с переводом, тогда инструкция ниже для вас:
+
+1. Сделайте форк репозитория
+2. Внесите изменения
+3. Создайте пулреквест
+
+### Требования к переводу
+
+1. Для терминов следует полагаться на [словарь веб-стандартов](https://github.com/web-standards-ru/dictionary) и [глоссарий React](https://github.com/reactjs/ru.reactjs.org/blob/master/TRANSLATION.md#соглашение-по-переводу-глоссарий)
+2. Не переводить примеры кода, за исключением комментариев
+3. Формат и структура документа не должны меняться:
+   - количество строк финального документа должно соответствовать оригиналу
+   - порядок блоков и структура в целом должны соответствовать оригиналу
+   - все дополнительные переносы и пробелы должны соответствовать оригиналу
+   - форматирование текста должно максимально соответствовать оригиналу
+4. Если обнаружена ошибка в оригинале, то следует [создать ишью в оригинальном репозитории](https://github.com/gatsbyjs/gatsby/issues/new?template=bug_report.md)
+5. Используйте только следующие символы:
+   - `―` (mdash) в случаях с тире
+   - `"` (doublequote) вместо любых других типов кавычек в тексте
+6. Советы/подсказки, которые оформлены в виде цитат, переводить как `Примечание`. Например:
+
+   ```markdown
+   > Note: Feel free to create these directories and files using your code editor, if you'd prefer.
+   <!-- переводить как -->
+   > Примечание: При желании вы можете создавать эти каталоги и файлы самостоятельно или с помощью редактора.
+
+    > Tip: This part of the tutorial has focused on the quickest and most straightforward way to get...
+    <!-- переводить как -->
+    > Примечание: Эта часть руководства была сосредоточена на самом быстром и простом способе получить...
+    ```
+
+7. Заголовки должны быть оформлены согласно [документации](https://www.gatsbyjs.org/contributing/gatsby-style-guide/#format-titles-and-headers)
+8. Следует избегать обращений "мы" и "наш", и использовать ["вы" и "ваш"](https://www.gatsbyjs.org/contributing/gatsby-style-guide/#use-you-as-the-pronoun)

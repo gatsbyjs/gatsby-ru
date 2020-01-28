@@ -13,7 +13,7 @@ To reduce the number of requests to the server, importing images that are less t
 
 Here's an example:
 
-```js
+```jsx
 import React from "react"
 import logo from "./logo.png" // Tell Webpack this JS file uses this image
 
@@ -47,6 +47,10 @@ Please be advised that this is also a custom feature of Webpack.
   lessonLink="https://egghead.io/lessons/gatsby-import-a-local-image-into-a-gatsby-component-with-webpack"
   lessonTitle="Import a Local Image into a Gatsby Component with webpack"
 />
+
+### Additional resources
+
+- More on [using an imported font](/docs/recipes/styling-css#adding-a-local-font).
 
 ## Querying for a `File` in GraphQL using gatsby-source-filesystem
 
