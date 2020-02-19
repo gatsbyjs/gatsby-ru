@@ -81,7 +81,11 @@ You can now view gatsbyjs.org in the browser.
   On Your Network:  http://192.168.0.212:8000/ // highlight-line
 ```
 
+<<<<<<< HEAD
 **Примечание**: вы не можете посетить 0.0.0.0:8000 в Windows (но всё будет работать с использованием localhost:8000 или "On Your Network" URL в Windows)
+=======
+**Note**: To access Gatsby on your local machine, use either `http://localhost:8000` or the "On Your Network" URL.
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 ### `build`
 

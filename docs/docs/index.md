@@ -1,9 +1,8 @@
 ---
 title: Документация Gatsby.js
+description: The one stop location for tutorials, guides, and information about building with Gatsby
 disableTableOfContents: true
 ---
-
-import EmailCaptureForm from "../../www/src/components/email-capture-form"
 
 Gatsby это быстрый и современный генератор сайтов для React.
 
@@ -19,7 +18,7 @@ Gatsby это быстрый и современный генератор сай
 1. [Рецепты](/docs/recipes/): Найдите быстрые ответы о том, как решить те или иные задачи с Gatsby.
 2. Выберите для себя по каким секциям документации Gatsby вы хотели бы пройтись:
 
-   - [Справочное Руководство](/docs/guides/): Изучайте разные темы по работе с Gatsby, например  получение данных, публикация и другие.
+   - [Справочное Руководство](/docs/guides/): Изучайте разные темы по работе с Gatsby, например получение данных, публикация и другие.
    - [Руководство по Gatsby API](/docs/api-reference/): Узнайте больше о Gatsby API.
    - [Релиз и Миграция](/docs/releases-and-migration/): Найдите заметки о релизах и руководства по миграции между основными версиями.
    - [Концептуальное Руководство](/docs/conceptual-guide/): Прочтите высокоуровневые обзоры о подходах к Gatsby.
