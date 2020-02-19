@@ -26,11 +26,7 @@ gatsby build
 gatsby serve
 ```
 
-<<<<<<< HEAD
-Как только команда запустится, вы можете посмотреть сайт по адресу `localhost:9000`.
-=======
-Once this starts, you can now view your site at `http://localhost:9000`.
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
+Как только команда запустится, вы можете посмотреть сайт по адресу `http://localhost:9000`.
 
 ### Запуск аудита с помощью Lighthouse
 
@@ -38,7 +34,7 @@ Once this starts, you can now view your site at `http://localhost:9000`.
 
 1.  Откройте сайт в Chrome (если ещё не открыли в нём) и откройте инструменты разработки Chrome.
 
-2. Нажмите на вкладку "Audits", где вы увидите экран, который выглядит примерно так:
+2.  Нажмите на вкладку "Audits", где вы увидите экран, который выглядит примерно так:
 
 ![Начальная страница аудита в Lighthouse](./images/lighthouse-audit.png)
 
