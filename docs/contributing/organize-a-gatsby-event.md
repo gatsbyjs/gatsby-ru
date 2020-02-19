@@ -2,14 +2,19 @@
 title: Organize a Gatsby Event
 ---
 
+<<<<<<< HEAD
 Interested in organizing a Gatsby event? We want to help build the Gatsby community in your area. If your event meets a few basic requirements listed below, you’ll be eligible to receive support from Gatsby such as Gatsby swag, \$300 for food, learning resources, and more. Get started by requesting event support below.
 
 [Request Event Support](https://airtable.com/shrpwc99yogJm9sfI)
+=======
+Our communiy event support offerings and process are undergoing some changes. Check back soon to see our updated community event support opportunities!
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 ## What constitutes a Gatsby event?
 
 A community organized Gatsby event can be a local meetup, a small conference, a _lunch and learn_ with coworkers, or a larger event. It’s up to you how many people you want to invite and how casual the environment. You can organize an event at your workplace or for the local community.
 
+<<<<<<< HEAD
 ## What support does Gatsby provide?
 
 There are several ways Gatsby may support your event:
@@ -35,5 +40,8 @@ To request support and submit your event to the Gatsby events page, apply at the
 [Request Event Support](https://airtable.com/shrpwc99yogJm9sfI)
 
 ## Related Links:
+=======
+## Related Links
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 - [Gatsby's Community Events](/contributing/events/)

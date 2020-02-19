@@ -17,7 +17,13 @@ title: "Быстрый старт"
 npm install -g gatsby-cli
 ```
 
+<<<<<<< HEAD
 ### Создание нового сайта.
+=======
+> The above command installs Gatsby CLI globally on your machine.
+
+### Create a new site
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 ```shell
 gatsby new gatsby-site
@@ -35,7 +41,11 @@ cd gatsby-site
 gatsby develop
 ```
 
+<<<<<<< HEAD
 Gatsby запустит рабочее окружение с горячей перезагрузкой доступное по умолчанию на `localhost:8000`.
+=======
+Gatsby will start a hot-reloading development environment accessible by default at `http://localhost:8000`.
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 Попробуйте изменить страницы с JavaScript в `src/pages`. Сохранённые изменения автоматически перезагружаются в браузере.
 
