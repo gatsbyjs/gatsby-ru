@@ -26,15 +26,4 @@ By default, Gatsby emulates the following config:
 }
 ```
 
-<<<<<<< HEAD
-If you only support newer browsers, make sure to specify this in your
-`package.json`. This will often enable you to ship smaller JavaScript files.
-
-## Note about IE < 11
-
-React depends on collection types `Map` and `Set`. While these are not used by Gatsby, Gatsby uses React and you will need to polyfill these if you support older browsers and devices including IE < 11.
-
-Read more about this in [ReactJS Docs - JavaScript Environment Requirements](https://reactjs.org/docs/javascript-environment-requirements.html)
-=======
 If you only support newer browsers, make sure to specify this in your `package.json`. This will often enable you to ship smaller JavaScript files.
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc

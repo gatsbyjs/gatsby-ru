@@ -146,13 +146,8 @@ In order to create pages from the sourced MDX files, you need
 to construct a query that finds all MDX nodes and pulls out
 the `slug` field added earlier.
 
-<<<<<<< HEAD
-> **NOTE**: You can open up a GraphiQL console for query testing
-> in your browser at <http://localhost:8000/___graphql>
-=======
 > **Note**: You can open up a GraphiQL console for query testing
 > in your browser at `http://localhost:8000/___graphql`
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 ```graphql
 query {

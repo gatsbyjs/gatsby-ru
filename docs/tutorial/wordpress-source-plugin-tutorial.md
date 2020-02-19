@@ -194,11 +194,7 @@ export const pageQuery = graphql`
 //highlight-end
 ```
 
-<<<<<<< HEAD
-Save these changes and look at localhost:8000 to see your new homepage with list of sorted blog posts!
-=======
 Save these changes and look at `http://localhost:8000` to see your new homepage with a list of sorted blog posts!
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 ![WordPress home after query](./images/wordpress-source-plugin-home.jpg)
 

@@ -1,13 +1,4 @@
 ---
-<<<<<<< HEAD
-title: Building an e-commerce site
----
-
-This is a stub. Help our community expand it.
-
-Please use the [Gatsby Style Guide](/contributing/gatsby-style-guide/) to ensure your
-pull request gets accepted.
-=======
 title: Building an e-commerce Site
 ---
 
@@ -18,4 +9,3 @@ To see examples of e-commerce sites built with Gatsby, check out the [showcase](
 <GuideList slug={props.slug} />
 
 _You can also check out the ["Making an e-commerce Site with Stripe" tutorial](/tutorial/ecommerce-tutorial/) for more information._
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc

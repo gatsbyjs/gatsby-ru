@@ -86,12 +86,8 @@ const typography = new Typography(
 export default typography;
 ```
 
-<<<<<<< HEAD
-After completing the above steps, you can start the development server using the command `gatsby develop` and navigate to the local website `http://localhost:8000`. If all went well you should see the text on your website using the Funston typographic theme just installed.
-=======
 After completing the above steps, you can start the development server using the command `gatsby develop` and navigate to the local website `http://localhost:8000`. If all went well you should see the text on your website using the Funston typographic theme.
 
 **Note**: If your fonts remains unchanged, remove all `font-family` calls in your CSS and check again.
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 If you would like to find more themes to install into your project check out at the official [Typography.js](https://kyleamathews.github.io/typography.js/) website.

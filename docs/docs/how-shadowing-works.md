@@ -8,15 +8,7 @@ Shadowing is a powerful feature that allows theme users to override components, 
 > like to learn about what Shadowing is, see the [What is Component Shadowing?](/blog/2019-04-29-component-shadowing/)
 > blog post.
 
-<<<<<<< HEAD:docs/docs/how-shadowing-works.mdx
-Shadowing works by using a [webpack resolver plugin](https://webpack.js.org/api/resolvers/)
-that maps themes in a `gatsby-config.js` to possible shadowed files. This gets
-especially mind melty because themes can add parent themes to a configuration so we
-need to be able to walk the composition of themes to determine the "last shadow"
-since the last shadowed theme file wins in the algorithm.
-=======
 Shadowing works by using a [webpack resolver plugin](https://webpack.js.org/api/resolvers/) that maps themes in a `gatsby-config.js` to possible shadowed files. This gets especially mind melty because themes can add parent themes to a configuration so you need to be able to walk the composition of themes to determine the "last shadow" since the last shadowed theme file wins in the algorithm.
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc:docs/docs/how-shadowing-works.md
 
 ## Theme Composition
 
@@ -28,13 +20,7 @@ module.exports = {
 }
 ```
 
-<<<<<<< HEAD:docs/docs/how-shadowing-works.mdx
-Both of the themes above (blog and portfolio) can install and configure
-any other theme so we end up with a tree of themes which we call a theme
-composition.
-=======
 Both of the themes above (blog and portfolio) can install and configure any other theme so you end up with a tree of themes which we call a theme composition.
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc:docs/docs/how-shadowing-works.md
 
 The theme composition itself has a few properties:
 
@@ -43,14 +29,7 @@ The theme composition itself has a few properties:
 - a theme that is used by another theme is the parent theme
 - theme trees are flattened during resolution
 
-<<<<<<< HEAD:docs/docs/how-shadowing-works.mdx
-These characteristics are what we use in the component shadowing algorithm
-to decide which component to render. So, for example, if `gatsby-theme-tomato-blog`
-has `gastby-theme-parent` as a parent theme we'd result in the following themes
-array:
-=======
 These characteristics are used in the component shadowing algorithm to decide which component to render. So, for example, if `gatsby-theme-tomato-blog` has `gatsby-theme-parent` as a parent theme it results in the following themes array:
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc:docs/docs/how-shadowing-works.md
 
 ```js
 const themesArray = [

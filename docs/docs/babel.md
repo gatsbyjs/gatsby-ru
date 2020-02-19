@@ -8,13 +8,7 @@ Gatsby uses the phenomenal project [Babel](https://babeljs.io/) to enable suppor
 
 Gatsby supports by default the last two versions of major browsers, IE 9+, as well as any browser that still has 1%+ browser share.
 
-<<<<<<< HEAD
-This means we automatically compile your JavaScript to ensure it works on older browsers.
-We also automatically add polyfills as needed — no more shipping code which mysteriously
-breaks on older browsers!
-=======
 This means that your JavaScript is automatically compiled to ensure it works on older browsers. Polyfills are also automatically added — no more shipping code which mysteriously breaks on older browsers!
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 If you only target newer browsers, see the [Browser Support](/docs/browser-support/) docs page for how to instruct Gatsby on which browsers you support and then Babel will start compiling for only these browsers.
 
