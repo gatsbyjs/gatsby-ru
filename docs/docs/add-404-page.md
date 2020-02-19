@@ -19,9 +19,7 @@ Gatsby позаботится о том, чтобы 404 страница был�
 нажав "Preview custom 404 page", чтобы убедиться, что она корректно отображается. Это удобно
 во время разработки, потому что можно посмотреть все доступные страницы.
 
-The screenshot below shows the default 404 page that Gatsby creates.
-It also lists out all the pages on your website. Clicking the "Preview custom 404
-page" button will allow you to view the 404 page you created.
+The screenshot below shows the default 404 page that Gatsby creates. It also lists out all the pages on your website. Clicking the "Preview custom 404 page" button will allow you to view the 404 page you created.
 ![Gatsby Default 404 Page](./images/gatsby-default-404.png)
 
 The screenshot below shows the custom 404 page.
