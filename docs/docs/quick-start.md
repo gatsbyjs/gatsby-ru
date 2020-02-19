@@ -11,45 +11,37 @@ title: "Быстрый старт"
   lessonTitle="Быстрый старт с Gatsby: создавайте, разрабатывайте и собирайте Gatsby сайты из командной строки"
 />
 
-### Установка Gatsby CLI.
+### Установка Gatsby CLI
 
 ```shell
 npm install -g gatsby-cli
 ```
 
-<<<<<<< HEAD
-### Создание нового сайта.
-=======
 > The above command installs Gatsby CLI globally on your machine.
 
-### Create a new site
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
+### Создание нового сайта
 
 ```shell
 gatsby new gatsby-site
 ```
 
-### Изменение директории на папку с сайтом.
+### Изменение директории на папку с сайтом
 
 ```shell
 cd gatsby-site
 ```
 
-### Запуск сервера разработки.
+### Запуск сервера разработки
 
 ```shell
 gatsby develop
 ```
 
-<<<<<<< HEAD
-Gatsby запустит рабочее окружение с горячей перезагрузкой доступное по умолчанию на `localhost:8000`.
-=======
-Gatsby will start a hot-reloading development environment accessible by default at `http://localhost:8000`.
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
+Gatsby запустит рабочее окружение с горячей перезагрузкой доступное по умолчанию на `http://localhost:8000`.
 
 Попробуйте изменить страницы с JavaScript в `src/pages`. Сохранённые изменения автоматически перезагружаются в браузере.
 
-### Создание продакшен-сборки.
+### Создание продакшен-сборки
 
 ```shell
 gatsby build
@@ -57,7 +49,7 @@ gatsby build
 
 Gatsby выполнит оптимизированную продакшен-сборку для вашего сайта, генерируя статические HTML и бандлы JavaScript для каждого маршрута.
 
-### Запуск продакшен-сборки локально.
+### Запуск продакшен-сборки локально
 
 ```shell
 gatsby serve
