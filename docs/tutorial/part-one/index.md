@@ -4,7 +4,7 @@ typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-В [**предыдущем разделе**](/tutorial/part-zero/) мы подготовили локальную среду разработки, установив необходимое программное обеспечение и создав первый сайт Gatsby с помощью [**"hello world" стартера**](https://github.com/gatsbyjs/gatsby-starter-hello-world). Теперь мы погружаемся в код, созданный этим стартером.
+В [**предыдущем разделе**](/tutorial/part-zero/) мы подготовили локальную среду разработки, установив необходимое программное обеспечение и создав первый сайт Gatsby с помощью [**стартера "hello world"**](https://github.com/gatsbyjs/gatsby-starter-hello-world). Теперь мы погружаемся в код, созданный этим стартером.
 
 ## Стартеры Gatsby
 
@@ -17,7 +17,7 @@ gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 Данная структура команды применима к любому существующему стартеру Gatsby:
 
 ```shell
-gatsby new [НАЗВАНИЕ_ПРОЕКТА] [ССЫЛКА_НА_GIT_РЕПОЗИТОРИЙ_СТАРТЕРА]
+gatsby new [НАЗВАНИЕ_ПАПКИ_САЙТА] [ССЫЛКА_НА_GIT_РЕПОЗИТОРИЙ_СТАРТЕРА]
 ```
 
 Запуская данную команду без URL-адреса, Gatsby-CLI автоматически создаст проект на основе [**стартера по умолчанию**](https://github.com/gatsbyjs/gatsby-starter-default). В этом разделе мы продолжим использовать проект "Hello World", созданный в предыдущей части руководства.
