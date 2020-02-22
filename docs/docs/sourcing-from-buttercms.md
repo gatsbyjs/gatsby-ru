@@ -265,7 +265,7 @@ in your terminal, run
 gatsby develop
 ```
 
-Now open up [localhost:8000/home](http://localhost:8000/home) to see the home page populated with the content you created on butter.
+Now open up `http://localhost:8000/home` to see the home page populated with the content you created on butter.
 
 ## Create multiple pages using Page Types
 
