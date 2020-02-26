@@ -1,9 +1,8 @@
 ---
 title: Contributing to Gatsby.js
+description: Learn about contributing to one of the most welcoming communities helping develop the future of the web
 disableTableOfContents: true
 ---
-
-import EmailCaptureForm from "../../www/src/components/email-capture-form"
 
 Thanks for being interested in contributing! We're so glad you want to help!
 
