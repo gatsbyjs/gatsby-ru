@@ -1,57 +1,57 @@
 ---
-title: Creating nested layout components
+title: Создание вложенных компонентов разметки
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Welcome to part three!
+Добро пожаловать в третью часть!
 
-## What's in this tutorial?
+## Что вы узнаете в этом уроке?
 
-In this part, you'll learn about Gatsby plugins and creating "layout" components.
+В этой части, вы узнаете о Gatsby плагинах и о создании компонентов разметки.
 
-Gatsby plugins are JavaScript packages that help add functionality to a Gatsby site. Gatsby is designed to be extensible, which means plugins are able to extend and modify just about everything Gatsby does.
+Плагины Gatsby это JavaScript пакеты, которые помогают добавлять функциональность Gatsby сайту. Gatsby спроектирован быть расширяемым, это означает что плагины могут расширять и изменять практически всё что Gatsby делает.
 
-Layout components are for sections of your site that you want to share across multiple pages. For example, sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.org's layout component.
+Компоненты разметки предназначены для секций вашего сайта которые вы хотите разделить между несколькими страницами. Например, сайты обычно используют макет с общей шапкой и подвалом. Другой частый случай это добавление боковой панели и/или меню навигации. К примеру, на этой странице, шапка в верхней части сайта является частью компонента разметки gatsbyjs.org.
 
-Let's dive into part three.
+Давайте продолжим погружение.
 
-## Using plugins
+## Использование плагинов
 
-You’re probably familiar with the idea of plugins. Many software systems support adding custom plugins to add new functionality or even modify the core workings of the software. Gatsby plugins work the same way.
+Вы возможно знакомы с идеей плагинов. Много программных систем поддерживают использование кастомных плагинов для добавления новой функциональности или даже изменения основной функциональности программного обеспечения. Gatsby плагины не исключение.
 
-Community members (like you!) can contribute plugins (small amounts of JavaScript code) that others can then use when building Gatsby sites.
+Участники сообщества (как вы!) могут принять участие в создании плагинов (представляющих собой небольшое количество JavaScript кода) которые могут быть использованы другими пользователями при создании Gatsby сайтов.
 
-> There are already hundreds of plugins! Explore the Gatsby [Plugin Library](/plugins/).
+> У нас уже сотни плагинов! Откройте для себя [Библиотеку Плагинов](/plugins/) Gatsby.
 
-Our goal with plugins is to make them straightforward to install and use. You will likely be using plugins in almost every Gatsby site you build. While working through the rest of the tutorial you’ll have many opportunities to practice installing and using plugins.
+Наша цель это сделать простым и понятным процесс установки и использования плагинов. Существует большая вероятность того что вы будете использовать их почти в каждом вашем Gatsby проекте. Далее в этом уроке у вас будет много возможностей попрактиковаться в их установке и использовании.
 
-For an initial introduction to using plugins, we'll install and implement the Gatsby plugin for Typography.js.
+Во вступительной части урока, мы установим и реализуем Gatsby плагин для Typography.js.
 
-[Typography.js](https://kyleamathews.github.io/typography.js/) is a JavaScript library which generates global base styles for your site's typography. The library has a [corresponding Gatsby plugin](/packages/gatsby-plugin-typography/) to streamline using it in a Gatsby site.
+[Typography.js](https://kyleamathews.github.io/typography.js/) это JavaScript библиотека, которая создает глобальные стили для типографики вашего сайта. У этой библиотеки есть [соответствующий Gatsby плагин](/packages/gatsby-plugin-typography/), который упрощает её использование в Gatsby сайте.
 
-### ✋ Create a new Gatsby site
+### ✋ Создание нового Gatsby сайта
 
-As we mentioned in [part two](/tutorial/part-two/), at this point it's probably a good idea to close the terminal window(s) and project files from previous parts of the tutorial, to keep things clean on your desktop. Then open a new terminal window and run the following commands to create a new Gatsby site in a directory called `tutorial-part-three` and then move to this new directory:
+Как уже отмечалось во [второй части](/tutorial/part-two/), на данном этапе будет неплохой идеей будет закрыть окно терминала и файлы проекта из предыдущей части этого руководства, чтобы начать всё с чистого листа. Затем, откройте новое окно терминала и выполните следующие команды по созданию нового сайта Gatsby в папке под названием `tutorial-part-three` и перейдите в неё:
 
 ```shell
 gatsby new tutorial-part-three https://github.com/gatsbyjs/gatsby-starter-hello-world
 cd tutorial-part-three
 ```
 
-### ✋ Install and configure `gatsby-plugin-typography`
+### ✋ Установка и настройка `gatsby-plugin-typography`
 
-There are two main steps to using a plugin: Installing and configuring.
+Два главных этапа использования этого плагина это установка и настройка.
 
-1. Install the `gatsby-plugin-typography` NPM package.
+1. Установите `gatsby-plugin-typography` NPM пакет.
 
 ```shell
 npm install --save gatsby-plugin-typography react-typography typography typography-theme-fairy-gates
 ```
 
-> Note: Typography.js requires a few additional packages, so those are included in the instructions. Additional requirements like this will be listed in the "install" instructions of each plugin.
+> Примечание: Typography.js требует несколько дополнительных пакетов, поэтому они включены в команду установки. Такие дополнительные требования будут перечислены в команде установки каждого плагина.
 
-2. Edit the file `gatsby-config.js` at the root of your project to the following:
+2. Измените файл `gatsby-config.js` в корне вашего проекта следующим образом:
 
 ```javascript:title=gatsby-config.js
 module.exports = {
@@ -66,11 +66,11 @@ module.exports = {
 }
 ```
 
-The `gatsby-config.js` is another special file that Gatsby will automatically recognize. This is where you add plugins and other site configuration.
+`gatsby-config.js` это ещё один специальный файл, который автоматически распознается Gatsby. В нём обычно содержатся плагины и другие настройки сайта.
 
-> Check out the [doc on gatsby-config.js](/docs/gatsby-config/) to read more, if you wish.
+> Взгляните на [документацию по gatsby-config.js](/docs/gatsby-config/) чтобы узнать больше.
 
-3. Typography.js needs a configuration file. Create a new directory called `utils` in the `src` directory. Then add a new file called `typography.js` to `utils` and copy the following into the file:
+3. Typography.js требует файла настроек. Создайте новую папку `utils` внутри папки `src`. Затем создайте новый файл под названием `typography.js` в папке `utils` и скопируйте в него следующее содержимое:
 
 ```javascript:title=src/utils/typography.js
 import Typography from "typography"
@@ -82,20 +82,19 @@ export const { scale, rhythm, options } = typography
 export default typography
 ```
 
-4. Start the development server.
+4. Запустите сервер разработки.
 
 ```shell
 gatsby develop
 ```
 
-Once you load the site, if you inspect the generated HTML using the Chrome developer tools, you’ll see that the typography plugin added a `<style>` element to the `<head>` element with its generated CSS:
+Как только сайт загрузится и если вы используете средства разработки Chrome для инпектирования сгенерированного HTML, то вы увидите что плагин типографики добавил `<style>` элемент со сгенерированным CSS в `<head>` элемент:
 
 ![typography-styles](typography-styles.png)
 
-### ✋ Make some content and style changes
+### ✋ Внесение изменений в содержимое и стили
 
-Copy the following into your `src/pages/index.js` so you can see the
-effect of the CSS generated by Typography.js better.
+Скопируйте следующее содержимое в ваш `src/pages/index.js` файл, чтобы увидеть эффект от применения CSS стилей сгенерированных библиотекой Typography.js.
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -111,12 +110,11 @@ export default () => (
 )
 ```
 
-Your site should now look like this:
+Ваш сайт должен выглядеть примерно так:
 
 ![no-layout](no-layout.png)
 
-Let's make a quick improvement. Many sites have a single column of text centered in the middle of the page. To create this, add the following styles to the
-`<div>` in `src/pages/index.js`.
+Сделаем небольшое улучшение. Многие сайты используют одну колонку с текстом в середине страницы. Чтобы сделать подобное, добавьте следующие стили в элемент `<div>` в файле `src/pages/index.js`.
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -135,11 +133,11 @@ export default () => (
 
 ![with-layout2](with-layout2.png)
 
-Sweet. You've installed and configured your very first Gatsby plugin!
+Отлично. Вы установили и настроили ваш первый Gatsby плагин!
 
-## Creating layout components
+## Создание компонентов разметки
 
-Now let's move on to learning about layout components. To get ready for this part, add a couple new pages to your project: an about page and a contact page.
+Перейдем к изучению компонентов разметки. Чтобы подготовиться к этой части, добавьте несколько новых страниц в ваш проект: about и contact.
 
 ```jsx:title=src/pages/about.js
 import React from "react"
@@ -165,19 +163,19 @@ export default () => (
 )
 ```
 
-Let's see what the new about page looks like:
+Давайте посмотрим как выглядит страница:
 
 ![about-uncentered](about-uncentered.png)
 
-Hmm. It would be nice if the content of the two new pages were centered like the index page. And it would be nice to have some sort of global navigation so it's easy for visitors to find and visit each of the sub-pages.
+Хмм. Было бы хорошо если бы содержимое двух новых страниц было отцентрировано так же как на стартовой странице. И было бы еще лучше использовать глобальную навигацию для того чтобы посетителям было легче находить и посещать каждую из подстраниц.
 
-You'll tackle these changes by creating your first layout component.
+Вы решите эту проблему создав ваш первый компонент разметки.
 
-### ✋ Create your first layout component
+### ✋ Создание вашего первого компонента разметки
 
-1. Create a new directory at `src/components`.
+1. Создайте новую папку `src/components`.
 
-2. Create a very basic layout component at `src/components/layout.js`:
+2. Создайте очень простой компонент в этой папке `src/components/layout.js`:
 
 ```jsx:title=src/components/layout.js
 import React from "react"
@@ -189,7 +187,7 @@ export default ({ children }) => (
 )
 ```
 
-3. Import this new layout component into your `src/pages/index.js` page component:
+3. Импортируйте вновь созданный компонент разметки в ваш `src/pages/index.js` компонент:
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -208,17 +206,17 @@ export default () => (
 
 ![with-layout2](with-layout2.png)
 
-Sweet, the layout is working! The content of your index page is still centered.
+Отлично, разметка работает! Содержимое вашей стартовой страницы отцентрировано.
 
-But try navigating to `/about/`, or `/contact/`. The content on those pages still won't be centered.
+Но попробуйте перейти на страницу `/about/`, или `/contact/`. Содержимое данных страниц все еще не отцентрировано.
 
-4. Import the layout component in `about.js` and `contact.js` (as you did for `index.js` in the previous step).
+4. Импортируйте компонент разметки в `about.js` и `contact.js` компоненты (так же как вы сделали это для `index.js` компонента ранее).
 
-The content of all three of your pages is centered thanks to this single shared layout component!
+Содержимое всех трех страниц теперь отцентрировано благодаря одному компоненту разметки!
 
-### ✋ Add a site title
+### ✋ Добавление заголовка сайта
 
-1. Add the following line to your new layout component:
+1. Добавьте следующую строку кода в ваш новый компонент разметки:
 
 ```jsx:title=src/components/layout.js
 import React from "react"
@@ -231,13 +229,13 @@ export default ({ children }) => (
 )
 ```
 
-If you go to any of your three pages, you'll see the same title added, e.g. the `/about/` page:
+Если вы перейдете в любую из трех ваших страниц, вы увидите тот же заголовок добавленный ранее, к примеру, на странице `/about/`:
 
 ![with-title](with-title.png)
 
-### ✋ Add navigation links between pages
+### ✋ Добавление ссылок для навигации между страницами
 
-1. Copy the following into your layout component file:
+1. Скопируйте следующее содержимое в ваш компонент разметки:
 
 ```jsx:title=src/components/layout.js
 import React from "react"
@@ -272,10 +270,10 @@ export default ({ children }) => (
 
 ![with-navigation2](with-navigation.png)
 
-And there you have it! A three page site with basic global navigation.
+И вот что мы имеем! Все три страницы сайта с простой глобальной навигацией.
 
-_Challenge:_ With your new "layout component" powers, try adding headers, footers, global navigation, sidebars, etc. to your Gatsby sites!
+_Задача:_ Используя ваши новые знания "компонентов разметки", попробуйте добавить шапки, подвалы, глобальную навигацию, боковые панели в ваши Gatsby сайты!
 
-## What's coming next?
+## Что будет дальше?
 
-Continue on to [part four of the tutorial](/tutorial/part-four/) where you'll start learning about Gatsby's data layer and programmatically creating pages!
+Перейдём в [четвёртую часть урока](/tutorial/part-four/) где вы начнёте изучать слой данных Gatsby и программно создавать Gatsby страницы!
