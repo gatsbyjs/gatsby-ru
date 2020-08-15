@@ -1,6 +1,6 @@
 ---
 title: Документация Gatsby.js
-description: The one stop location for tutorials, guides, and information about building with Gatsby
+description: Единое место для учебных пособий, руководств и информации по работе с Gatsby
 disableTableOfContents: true
 ---
 
