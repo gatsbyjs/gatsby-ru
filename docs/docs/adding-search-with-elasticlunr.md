@@ -1,8 +1,8 @@
 ---
-title: Adding search with elasticlunr
+title: Добавление поиска с помощью elasticlunr
 ---
 
-This is a stub. Help our community expand it.
+Это тупик. Помогите нашему сообществу расширить тему.
 
-Please use the [Gatsby Style Guide](/contributing/gatsby-style-guide/) to ensure your
-pull request gets accepted.
+Пожалуйста, используйте [Gatsby Style Guide](/contributing/gatsby-style-guide/) чтобы убедиться, что ваш
+pull request будет принят.
